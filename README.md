@@ -38,7 +38,21 @@ This repository is a publication-grade, comprehensive learning and exam-preparat
 | **Progress Tracker** | Real-time syllabus and topic completion tracker | [PROGRESS_TRACKER.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/PROGRESS_TRACKER.md) |
 | **2-Day Fast-Track Revision** | High-yield 48-hour exam revision plan | [TWO_DAY_STUDY_PLAN.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/TWO_DAY_STUDY_PLAN.md) |
 | **YouTube & Video Guide** | Curated video lecture tracks (NPTEL Rajib Mall, Gate Smashers, etc.) | [YOUTUBE_LEARNING_GUIDE.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/sources/youtube/YOUTUBE_LEARNING_GUIDE.md) |
+| **Textbook Catalog** | Prescribed literature & chapter concordance | [TEXTBOOK_CATALOG.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/sources/textbooks/TEXTBOOK_CATALOG.md) |
+| **Master Solutions PDF** | 6-Module Compendium & Worked Solutions | [24ITPC302_MASTER_EXAM_SOLUTIONS.pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/24ITPC302_ALL_MODULES_MASTER_EXAM_SOLUTIONS.pdf) |
 | **Python Tools** | Automation scripts for metrics calculation and publication-grade PDF generation | [code/python/](file:///C:/Users/siva2/OneDrive/Desktop/soft/code/python/) |
+
+---
+
+## 📖 Prescribed Textbooks & Reference Materials (Downloaded & Offline)
+
+All official reference books and university lecture notes are downloaded and stored locally in [`textbooks/`](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/) and root:
+
+1. **[1. Software Engineering - A Practitioner's Approach (8th Edition) - Roger S. Pressman, Bruce R. Maxim [TEXTBOOK 1].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/1.%20Software%20Engineering%20-%20A%20Practitioner's%20Approach%20(8th%20Edition)%20-%20Roger%20S.%20Pressman,%20Bruce%20R.%20Maxim%20[TEXTBOOK%201].pdf)** (22.9 MB)
+2. **[2. Software Engineering (9th Edition) - Ian Sommerville [TEXTBOOK 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/2.%20Software%20Engineering%20(9th%20Edition)%20-%20Ian%20Sommerville%20[TEXTBOOK%202].pdf)** (5.0 MB)
+3. **[3. Fundamentals of Software Engineering (4th Edition) - Rajib Mall [REFERENCE 1 - NPTEL].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/3.%20Fundamentals%20of%20Software%20Engineering%20(4th%20Edition)%20-%20Rajib%20Mall%20[REFERENCE%201%20-%20NPTEL].pdf)** (9.1 MB — IIT Kharagpur NPTEL Course 106105182)
+4. **[4. Software Engineering (3rd Edition) - K.K. Aggarwal, Yogesh Singh [REFERENCE 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/4.%20Software%20Engineering%20(3rd%20Edition)%20-%20K.K.%20Aggarwal,%20Yogesh%20Singh%20[REFERENCE%202].pdf)** (6.7 MB)
+5. **[5. Comprehensive Software Engineering University Lecture Notes - VSSUT [REFERENCE 3].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/5.%20Comprehensive%20Software%20Engineering%20University%20Lecture%20Notes%20-%20VSSUT%20[REFERENCE%203].pdf)** (3.5 MB)
 
 ---
 
