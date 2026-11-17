@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>24ITPC302 Software Engineering Master Solutions</title>
+<title>24ITPC302 Software Engineering Priority Master Solutions</title>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <style>
 
 @page {
     size: A4;
-    margin: 16mm 14mm 16mm 14mm;
+    margin: 14mm 12mm 14mm 12mm;
     @bottom-right {
         content: "Page " counter(page) " of " counter(pages);
-        font-size: 8.5pt;
+        font-size: 8pt;
         color: #64748b;
     }
 }
@@ -19,8 +19,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #0f172a;
-    line-height: 1.55;
-    font-size: 10pt;
+    line-height: 1.5;
+    font-size: 9.5pt;
     margin: 0;
     padding: 0;
 }
@@ -28,12 +28,12 @@ body {
 .cover-container {
     text-align: center;
     border-bottom: 3px double #0284c7;
-    padding-bottom: 14px;
-    margin-bottom: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .college-name {
-    font-size: 15pt;
+    font-size: 14pt;
     font-weight: 800;
     color: #0369a1;
     letter-spacing: 0.5px;
@@ -42,147 +42,127 @@ body {
 }
 
 .college-sub {
-    font-size: 9pt;
+    font-size: 8.5pt;
     font-weight: 600;
     color: #475569;
-    margin: 2px 0 6px 0;
+    margin: 2px 0 4px 0;
 }
 
 .doc-title {
-    font-size: 13.5pt;
+    font-size: 13pt;
     font-weight: 800;
     color: #0f172a;
     margin: 6px 0;
     background-color: #f0f9ff;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 4px 16px;
     border-radius: 4px;
     border: 1.5px solid #bae6fd;
 }
 
 .doc-subtitle {
-    font-size: 10pt;
+    font-size: 9.5pt;
     font-weight: 600;
     color: #334155;
-    margin: 4px 0 10px 0;
+    margin: 3px 0 8px 0;
 }
 
 .meta-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 6px;
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
-    padding: 8px 12px;
-    font-size: 8.5pt;
+    padding: 6px 10px;
+    font-size: 8pt;
     text-align: left;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .meta-item strong {
     color: #0369a1;
 }
 
-.module-header {
+.unit-header {
     background: linear-gradient(90deg, #0369a1, #0284c7);
     color: white;
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 700;
-    padding: 8px 14px;
+    padding: 6px 12px;
     border-radius: 4px;
-    margin-top: 26px;
-    margin-bottom: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     page-break-after: avoid;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.module-header.mod1 { background: linear-gradient(90deg, #0369a1, #38bdf8); }
-.module-header.mod2 { background: linear-gradient(90deg, #0f766e, #14b8a6); }
-.module-header.mod3 { background: linear-gradient(90deg, #4338ca, #6366f1); }
-.module-header.mod4 { background: linear-gradient(90deg, #b45309, #f59e0b); }
-.module-header.mod5 { background: linear-gradient(90deg, #be123c, #f43f5e); }
-.module-header.mod6 { background: linear-gradient(90deg, #475569, #64748b); }
-.module-header.cheatsheet { background: linear-gradient(90deg, #0f172a, #334155); }
-
-.section-label {
-    font-size: 8.5pt;
-    background: rgba(255, 255, 255, 0.25);
-    padding: 2px 8px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
+.unit-header.u1 { background: linear-gradient(90deg, #0369a1, #0284c7); }
+.unit-header.u2 { background: linear-gradient(90deg, #0f766e, #14b8a6); }
+.unit-header.u3 { background: linear-gradient(90deg, #4338ca, #6366f1); }
+.unit-header.u4 { background: linear-gradient(90deg, #b45309, #f59e0b); }
+.unit-header.u5 { background: linear-gradient(90deg, #be123c, #f43f5e); }
+.unit-header.u6 { background: linear-gradient(90deg, #334155, #64748b); }
 
 .card {
-    border: 1px solid #e2e8f0;
-    border-left: 4.5px solid #0284c7;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #0284c7;
     border-radius: 4px;
-    padding: 12px 14px;
-    margin-bottom: 16px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
     background-color: #ffffff;
     page-break-inside: avoid;
 }
 
-.card.combo {
-    border-left-color: #d97706;
-    background-color: #fffbeb;
-}
-
-.card.num {
-    border-left-color: #059669;
-    background-color: #f0fdf4;
-}
-
-.card.cheat {
-    border-left-color: #0284c7;
-    background-color: #f0f9ff;
-}
+.card.u1 { border-left-color: #0284c7; }
+.card.u2 { border-left-color: #0f766e; }
+.card.u3 { border-left-color: #4338ca; }
+.card.u4 { border-left-color: #b45309; }
+.card.u5 { border-left-color: #be123c; }
+.card.u6 { border-left-color: #334155; }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 6px;
-    margin-bottom: 8px;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .q-title {
-    font-size: 10.5pt;
+    font-size: 10pt;
     font-weight: 700;
     color: #0369a1;
 }
 
-.badge {
-    font-size: 8pt;
+.badge-13m {
+    font-size: 7.5pt;
     font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: #fee2e2;
+    color: #b91c1c;
 }
-
-.badge-2m { background-color: #e0f2fe; color: #0369a1; }
-.badge-13m { background-color: #fee2e2; color: #b91c1c; }
-.badge-cheat { background-color: #dcfce7; color: #15803d; }
-.badge-num { background-color: #e0e7ff; color: #4338ca; }
 
 .q-text {
     font-style: italic;
     color: #334155;
     background-color: #f8fafc;
     border-left: 3px solid #94a3b8;
-    padding: 6px 10px;
-    margin: 6px 0 10px 0;
-    font-size: 9.5pt;
+    padding: 5px 8px;
+    margin: 4px 0 8px 0;
+    font-size: 9pt;
 }
 
 .step-title {
     font-weight: 700;
     color: #0f172a;
-    margin-top: 8px;
-    margin-bottom: 3px;
-    font-size: 9.5pt;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-size: 9pt;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -190,14 +170,14 @@ body {
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0;
-    font-size: 8.5pt;
+    margin: 6px 0;
+    font-size: 8pt;
 }
 
 .data-table th, .data-table td {
     border: 1px solid #cbd5e1;
-    padding: 4px 6px;
-    text-align: center;
+    padding: 3px 5px;
+    text-align: left;
 }
 
 .data-table th {
@@ -210,22 +190,23 @@ body {
     background-color: #f0fdf4;
     border: 1.5px solid #22c55e;
     border-radius: 4px;
-    padding: 6px 10px;
-    margin-top: 8px;
+    padding: 5px 8px;
+    margin-top: 6px;
     font-weight: 700;
     color: #15803d;
-    font-size: 9.5pt;
+    font-size: 9pt;
 }
 
 .code-box {
     background-color: #f8fafc;
     border: 1px solid #cbd5e1;
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     font-family: Consolas, monospace;
-    font-size: 8.5pt;
-    margin: 6px 0;
-    line-height: 1.4;
+    font-size: 8pt;
+    margin: 5px 0;
+    line-height: 1.35;
+    white-space: pre-wrap;
 }
 
 </style>
@@ -238,7 +219,7 @@ body {
     <div class="college-sub">DEPARTMENT OF INFORMATION TECHNOLOGY & COMPUTER SCIENCE — REGULATIONS 2024</div>
     
     <div class="doc-title">24ITPC302: SOFTWARE ENGINEERING</div>
-    <div class="doc-subtitle">ALL-MODULES (1 TO 6) MASTER EXAMINATION COMPENDIUM & SOLUTIONS MANUAL</div>
+    <div class="doc-subtitle">FACULTY-PRESCRIBED PRIORITY EXAM TOPICS & MASTER MODEL SOLUTIONS</div>
     
     <div class="meta-grid">
         <div class="meta-item"><strong>Course Code:</strong> 24ITPC302</div>
@@ -246,218 +227,483 @@ body {
         <div class="meta-item"><strong>Regulation:</strong> 2024 Autonomous</div>
         <div class="meta-item"><strong>NPTEL Code:</strong> 106105182 (IIT KGP)</div>
         <div class="meta-item"><strong>Credits:</strong> 3 (L:3, T:0, P:0)</div>
-        <div class="meta-item"><strong>Total Periods:</strong> 45 Periods</div>
-        <div class="meta-item"><strong>Scope:</strong> Modules I to VI</div>
-        <div class="meta-item"><strong>SDG Goals:</strong> SDG No. 4 & 9</div>
+        <div class="meta-item"><strong>Scope:</strong> Units 1, 2, 3, 4, 5, 6</div>
+        <div class="meta-item"><strong>Primary Textbooks:</strong> Pressman, Sommerville, Mall</div>
+        <div class="meta-item"><strong>Target Marks:</strong> Full 100/100 Blueprint</div>
     </div>
 </div>
 
-<!-- SECTION 1: MASTER CHEAT SHEET -->
-<div class="module-header cheatsheet">
-    <span>SECTION 1: THE ULTIMATE 6-MODULE FORMULA, METRICS & ARCHITECTURE CHEAT SHEET</span>
-    <span class="section-label">High-Yield Exam Summary</span>
+<!-- ========================================== -->
+<!-- UNIT 1: SOFTWARE PROCESS & AGILE DEVELOPMENT -->
+<!-- ========================================== -->
+<div class="unit-header u1">
+    <span>UNIT 1: SOFTWARE PROCESS & AGILE DEVELOPMENT</span>
+    <span>FULL 13-MARK MODEL SOLUTIONS</span>
 </div>
 
-<div class="card cheat">
+<!-- U1.1: AGILE MODEL -->
+<div class="card u1">
     <div class="card-header">
-        <span class="q-title">📐 MODULE I: SOFTWARE PROCESS & AGILE DEVELOPMENT CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE I SUMMARY</span>
-    </div>
-    <p><strong>1. Prescriptive Process Models:</strong>
-    <br>• <em>Waterfall Model:</em> Linear sequential; Communication \(\to\) Planning \(\to\) Modeling \(\to\) Construction \(\to\) Deployment. Inflexible; late working software. Best for compiler/payroll.
-    <br>• <em>V-Model:</em> Left wing = Verification (Specs/Design); Right wing = Validation (Testing). Early test planning. Best for avionics/medical.
-    <br>• <em>Spiral Model (Boehm):</em> Risk-driven evolutionary lifecycle in 4 quadrants: (I) Objective setting, (II) Risk analysis/prototyping, (III) Engineering development, (IV) Planning next phase.
-    <br>• <em>RAD Model:</em> Component-based 60–90 day rapid cycle using 4GL visual tools. Requires modular scope.
-    <br>• <em>Prototyping:</em> Throwaway (clarify requirements, discard) vs Evolutionary (iteratively evolves into production system).
-    </p>
-    <p><strong>2. Agile Manifesto & Extreme Programming (XP):</strong>
-    <br>• <em>4 Values:</em> Individuals & interactions, Working software, Customer collaboration, Responding to change.
-    <br>• <em>XP Core Practices:</em> Pair Programming (Driver writes code; Navigator reviews in real-time), Test-Driven Development (TDD: write unit tests first), Continuous Integration (CI), 2-week Sprints, On-site customer.
-    </p>
-</div>
-
-<div class="card cheat">
-    <div class="card-header">
-        <span class="q-title">📋 MODULE II: REQUIREMENTS ANALYSIS & SPECIFICATION CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE II SUMMARY</span>
-    </div>
-    <p><strong>1. Requirements Classification & IEEE 830 SRS:</strong>
-    <br>• <em>Functional:</em> Specific services/calculations (e.g. "Authenticate user with OTP").
-    <br>• <em>Non-Functional (FURPS+):</em> Quality constraints: Performance (\(< 2\)s), Security (256-bit AES), Availability (99.99%), Portability.
-    <br>• <em>IEEE 830 SRS Outline:</em> 1. Introduction (Purpose, Scope), 2. Overall Description (Perspective, Functions, Constraints), 3. Specific Requirements (Interface, Functional, Performance, System attributes).
-    <br>• <em>Good SRS Attributes:</em> Unambiguous, Complete, Consistent, Verifiable/Testable, Modifiable, Traceable (via RTM).
-    </p>
-    <p><strong>2. Structured Analysis & Modeling:</strong>
-    <br>• <em>DFD Levels:</em> Level 0 (Context diagram, no data stores) \(\to\) Level 1 (Decomposition into 4–7 sub-processes) \(\to\) Level 2.
-    <br>• <em>Balancing Rule:</em> Net data flows across parent boundary at Level \(N\) must equal aggregate flows at Level \(N+1\).
-    <br>• <em>Petri Nets:</em> Places (\(P\), circles), Transitions (\(T\), bars), Arcs (\(A\)), Tokens (\(\bullet\)). Transition fires when every input place has \(\ge 1\) token; consumes input token and deposits output token.
-    <br>• <em>Data Dictionary Notation:</em> Sequence (`+`), Selection (`[ | ]`), Iteration (`{ }`), Optional (`( )`).
-    </p>
-</div>
-
-<div class="card cheat">
-    <div class="card-header">
-        <span class="q-title">🏗️ MODULE III: SOFTWARE DESIGN & ARCHITECTURE CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE III SUMMARY</span>
-    </div>
-    <p><strong>1. Functional Independence: Cohesion vs Coupling:</strong>
-    <br>• <em>Golden Law:</em> Maximize Cohesion, Minimize Coupling!
-    <br>• <em>Cohesion Hierarchy (Worst \(\to\) Best):</em> Coincidental \(\to\) Logical \(\to\) Temporal \(\to\) Procedural \(\to\) Communicational \(\to\) Sequential \(\to\) <strong>Functional (Best)</strong>.
-    <br>• <em>Coupling Hierarchy (Worst \(\to\) Best):</em> Content (Worst) \(\to\) Common (Globals) \(\to\) Control (Flags) \(\to\) Stamp (Data structure) \(\to\) <strong>Data (Best)</strong> \(\to\) Uncoupled.
-    </p>
-    <p><strong>2. Architectural Styles & Design Heuristics:</strong>
-    <br>• <em>Styles:</em> Data-Centered (Repository/Blackboard), Data-Flow (Pipe-and-Filter), Call-and-Return (Layered), Event-Driven (Pub-Sub).
-    <br>• <em>Transform Mapping:</em> Maps DFD to Structure Chart: Afferent branch (input) \(\to\) Transform center (compute) \(\to\) Efferent branch (output).
-    <br>• <em>Fan-Out:</em> Number of directly invoked submodules (\(3 \le \text{Fan-Out} \le 7\)). <em>Fan-In:</em> Number of calling modules (Maximize for reuse).
-    <br>• <em>Theo Mandel's 3 UI Rules:</em> (1) Place user in control, (2) Reduce user memory load, (3) Make interface consistent.
-    </p>
-</div>
-
-<div class="card cheat">
-    <div class="card-header">
-        <span class="q-title">🧪 MODULE IV: TESTING & MAINTENANCE CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE IV FORMULAS</span>
-    </div>
-    <p><strong>1. White-Box Basis Path Testing:</strong>
-    <br>• <em>Cyclomatic Complexity Formulas:</em>
-    \[ \mathbf{V(G) = E - N + 2P = P' + 1 = R} \]
-    where \(E\) = edges, \(N\) = nodes, \(P = 1\) (connected components), \(P'\) = predicate nodes, \(R\) = enclosed regions \(+\) 1 outer region.
-    <br>• <em>Significance:</em> Defines maximum number of linearly independent paths needed for 100% statement and branch coverage.
-    </p>
-    <p><strong>2. Black-Box Testing & Levels:</strong>
-    <br>• <em>Boundary Value Analysis (BVA):</em> For range \([a, b]\), test: \(a, \ a+1, \ \text{Nominal}, \ b-1, \ b\).
-    <br>• <em>Integration Testing:</em> Top-Down (requires <strong>Stubs</strong>) vs Bottom-Up (requires <strong>Drivers</strong>) vs Sandwich.
-    <br>• <em>Maintenance Types:</em> Corrective (21%), Adaptive (25%), <strong>Perfective (50% - Largest)</strong>, Preventive (4%).
-    <br>• <em>Reengineering Model:</em> Inventory analysis \(\to\) Document restructuring \(\to\) <strong>Reverse engineering</strong> \(\to\) Code/Data restructuring \(\to\) <strong>Forward engineering</strong>.
-    </p>
-</div>
-
-<div class="card cheat">
-    <div class="card-header">
-        <span class="q-title">📊 MODULE V: PROJECT MANAGEMENT & ESTIMATION CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE V FORMULAS</span>
-    </div>
-    <p><strong>1. Albrecht's Function Point (FP) Model:</strong>
-    \[ \mathbf{FP = UFC \times \left(0.65 + 0.01 \sum_{i=1}^{14} F_i\right)} \]
-    • Components: External Inputs (\(EI\): 3, 4, 6), External Outputs (\(EO\): 4, 5, 7), External Inquiries (\(EQ\): 3, 4, 6), Internal Files (\(ILF\): 7, 10, 15), External Interfaces (\(EIF\): 5, 7, 10).
-    <br>• \(VAF = 0.65 + 0.01 \sum F_i \implies 0.65 \le VAF \le 1.35\).
-    </p>
-    <p><strong>2. Basic COCOMO I Model:</strong>
-    \[ \mathbf{E = a \cdot (KLOC)^b \quad \text{[Person-Months]}}, \qquad \mathbf{D = c \cdot (E)^d \quad \text{[Months]}}, \qquad \mathbf{P = \frac{E}{D} \quad \text{[Staff]}} \]
-    • <em>Organic:</em> \(a = 2.4, \ b = 1.05, \ c = 2.5, \ d = 0.38\).
-    <br>• <em>Semidetached:</em> \(a = 3.0, \ b = 1.12, \ c = 2.5, \ d = 0.35\).
-    <br>• <em>Embedded:</em> \(a = 3.6, \ b = 1.20, \ c = 2.5, \ d = 0.32\).
-    </p>
-    <p><strong>3. Earned Value Analysis (EVA):</strong>
-    \[ \mathbf{CV = EV - AC}, \qquad \mathbf{SV = EV - PV} \]
-    \[ \mathbf{CPI = \frac{EV}{AC}}, \qquad \mathbf{SPI = \frac{EV}{PV}}, \qquad \mathbf{EAC = \frac{BAC}{CPI}} \]
-    • \(CPI < 1.0 \implies\) Over Budget (Bad); \(SPI < 1.0 \implies\) Behind Schedule (Bad).
-    </p>
-</div>
-
-<div class="card cheat">
-    <div class="card-header">
-        <span class="q-title">🛡️ MODULE VI: RISK MANAGEMENT & CASE TOOLS CHEAT SHEET</span>
-        <span class="badge badge-cheat">MODULE VI SUMMARY</span>
-    </div>
-    <p><strong>1. Software Risk Management:</strong>
-    <br>• <em>Risk Exposure:</em> \(\mathbf{RE = P \times C}\) (Probability \(\times\) Impact Cost).
-    <br>• <em>Risk Reduction Leverage:</em> \(\mathbf{RRL = \frac{RE_{\text{before}} - RE_{\text{after}}}{\text{Cost of Action}}}\). (Justified if \(RRL > 1.0\)).
-    <br>• <em>RMMM Plan:</em> <strong>Mitigation</strong> (proactive avoidance before risk occurs) \(\to\) <strong>Monitoring</strong> (tracking early warning triggers) \(\to\) <strong>Management</strong> (contingency response after risk occurs).
-    </p>
-    <p><strong>2. CASE Tools Environment:</strong>
-    <br>• <em>Architecture:</em> User Interface Layer \(\to\) Tool Integration Services (Data, Control, Presentation) \(\to\) <strong>Object Management System (OMS / Central Repository)</strong>.
-    <br>• <em>Taxonomy:</em> Upper CASE (Analysis/Design/DFD/UML), Lower CASE (Compilers, Test automation, Code generators), Integrated CASE (End-to-end full SDLC traceability).
-    </p>
-</div>
-
-<!-- SECTION 2: WORKED NUMERICAL SOLUTIONS -->
-<div class="module-header mod4">
-    <span>SECTION 2: WORKED NUMERICAL EXAM PROBLEMS</span>
-    <span class="section-label">100% Step-by-Step Solutions</span>
-</div>
-
-<div class="card num">
-    <div class="card-header">
-        <span class="q-title">🎯 NUMERICAL 1: White-Box Basis Path Testing & Cyclomatic Complexity</span>
-        <span class="badge badge-13m">FULL 13 MARKS</span>
+        <span class="q-title">Q1: Agile Software Development, 4 Core Values & 12 Principles</span>
+        <span class="badge-13m">13 MARKS</span>
     </div>
     <div class="q-text">
-        Find Cyclomatic Complexity \(V(G)\) and derive independent basis paths for:
-        <br><code>int findMax(int a, int b, int c) { int max = a; if (b > max) max = b; if (c > max) max = c; return max; }</code>
+        (a) Discuss the Agile software development philosophy. Explain the 4 core values and 12 principles of the Agile Manifesto. [7M]<br>
+        (b) Illustrate the generic Agile development lifecycle. Contrast Agile with traditional plan-driven models. [6M]
     </div>
-    <div class="step-title">Step 1: Graph Nodes & Edges</div>
-    <p>Nodes: \(N = 6\) (Node 1: entry, Node 2: check \(b>max\), Node 3: \(max=b\), Node 4: check \(c>max\), Node 5: \(max=c\), Node 6: return).
-    <br>Edges: \(E = 7\) (\(1\to 2, \ 2\to 3, \ 2\to 4, \ 3\to 4, \ 4\to 5, \ 4\to 6, \ 5\to 6\)).</p>
-    <div class="step-title">Step 2: Cyclomatic Complexity via 3 Independent Methods</div>
-    <p>1. <em>Edges & Nodes:</em> \(V(G) = E - N + 2P = 7 - 6 + 2(1) = \mathbf{3}\).
-    <br>2. <em>Predicate Nodes:</em> Nodes 2 and 4 are predicates \(\implies V(G) = P' + 1 = 2 + 1 = \mathbf{3}\).
-    <br>3. <em>Enclosed Regions:</em> 2 bounded inner regions \(+\) 1 unbounded outer region \(\implies V(G) = \mathbf{3}\).</p>
-    <div class="step-title">Step 3: Linearly Independent Basis Paths & Test Suite</div>
-    <p>• <strong>Path 1:</strong> \(1 \to 2 \to 4 \to 6 \implies \text{Input } (10, 5, 2) \implies \text{Expected: } 10\)
-    <br>• <strong>Path 2:</strong> \(1 \to 2 \to 3 \to 4 \to 6 \implies \text{Input } (5, 10, 2) \implies \text{Expected: } 10\)
-    <br>• <strong>Path 3:</strong> \(1 \to 2 \to 4 \to 5 \to 6 \implies \text{Input } (5, 2, 10) \implies \text{Expected: } 10\)</p>
-    <div class="answer-box">✓ Final Answer: V(G) = 3 | Exactly 3 Independent Basis Paths Guarantee 100% Path Coverage</div>
-</div>
-
-<div class="card num">
-    <div class="card-header">
-        <span class="q-title">🎯 NUMERICAL 2: Function Point (FP) Calculation & Language LOC Sizing</span>
-        <span class="badge badge-13m">FULL 13 MARKS</span>
+    <div class="step-title">Part (a): 4 Core Values & 12 Principles of Agile Manifesto</div>
+    <p>Agile prioritizes customer collaboration, team empowerment, and rapid delivery of working software over rigid plans.</p>
+    <div class="code-box">
+1. Individuals and Interactions   OVER  Processes and Tools
+2. Working Software               OVER  Comprehensive Documentation
+3. Customer Collaboration         OVER  Contract Negotiation
+4. Responding to Change           OVER  Following a Plan
     </div>
-    <div class="q-text">
-        System has: EI: 20 simple (wt 3), 10 average (wt 4); EO: 15 average (wt 5), 5 complex (wt 7); EQ: 12 simple (wt 3), 8 average (wt 4); ILF: 4 average (wt 10), 2 complex (wt 15); EIF: 3 average (wt 7). All 14 complexity factors are rated 3. Compute UFC, VAF, FP, and Python LOC (25 LOC/FP).
-    </div>
-    <div class="step-title">Step 1: Unadjusted Function Count (UFC)</div>
-    <p>\[ UFC = (20\times 3 + 10\times 4) + (15\times 5 + 5\times 7) + (12\times 3 + 8\times 4) + (4\times 10 + 2\times 15) + (3\times 7) \]
-    \[ UFC = (60 + 40) + (75 + 35) + (36 + 32) + (40 + 30) + 21 = 100 + 110 + 68 + 70 + 21 = \mathbf{369} \]</p>
-    <div class="step-title">Step 2: Value Adjustment Factor (VAF) & Final FP</div>
-    <p>\[ \sum_{i=1}^{14} F_i = 14 \times 3 = 42 \implies VAF = 0.65 + 0.01(42) = \mathbf{1.07} \]
-    \[ FP = UFC \times VAF = 369 \times 1.07 = \mathbf{394.83 \text{ Function Points}} \]</p>
-    <div class="step-title">Step 3: Estimated Sizing in Python & Java</div>
-    <p>• Python (25 LOC/FP): \(394.83 \times 25 = \mathbf{9,871 \text{ LOC} \ (9.87 \text{ KLOC})}\).
-    <br>• Java (53 LOC/FP): \(394.83 \times 53 = \mathbf{20,926 \text{ LOC} \ (20.93 \text{ KLOC})}\).</p>
-    <div class="answer-box">✓ Final Answer: UFC = 369 | VAF = 1.07 | FP = 394.83 | Python Size = 9.87 KLOC | Java Size = 20.93 KLOC</div>
-</div>
-
-<div class="card num">
-    <div class="card-header">
-        <span class="q-title">🎯 NUMERICAL 3: Basic COCOMO I Estimation across All 3 Modes</span>
-        <span class="badge badge-13m">FULL 13 MARKS</span>
-    </div>
-    <div class="q-text">
-        For a software system sized at 40 KLOC, calculate Effort (Person-Months), Duration (Months), Staff Size, and Productivity across Organic, Semidetached, and Embedded modes.
-    </div>
-    <div class="step-title">Calculations & Results</div>
+    <p><strong>Key Principles:</strong> (1) Highest priority is customer satisfaction via continuous delivery; (2) Welcome changing requirements even late; (3) Deliver working software frequently (weeks); (4) Daily collaboration between business & developers; (5) Motivated individuals given support & trust; (6) Face-to-face conversation; (7) Working software is primary progress measure; (8) Sustainable development pace; (9) Technical excellence & good design; (10) Simplicity (maximizing work NOT done); (11) Self-organizing teams; (12) Regular team reflection & tuning.</p>
+    <div class="step-title">Part (b): Generic Agile Lifecycle & Agile vs Traditional Comparison</div>
+    <p><strong>Lifecycle:</strong> Product Backlog \(\to\) Sprint Planning \(\to\) 2-4 Week Sprint (Daily Standup, TDD, CI) \(\to\) Working Increment \(\to\) Review & Demo \(\to\) Retrospective.</p>
     <table class="data-table">
-        <thead>
-            <tr><th>Mode</th><th>Effort Formula</th><th>Effort (E) [PM]</th><th>Time Formula</th><th>Duration (D) [Months]</th><th>Staff (P = E/D)</th></tr>
-        </thead>
+        <thead><tr><th>Parameter</th><th>Agile (Scrum, XP)</th><th>Traditional (Waterfall, V-Model)</th></tr></thead>
         <tbody>
-            <tr><td><strong>Organic</strong></td><td>\(2.4 \times (40)^{1.05}\)</td><td><strong>115.41 PM</strong></td><td>\(2.5 \times (115.41)^{0.38}\)</td><td><strong>15.24 Months</strong></td><td><strong>7.6 ≈ 8 Persons</strong></td></tr>
-            <tr><td><strong>Semidetached</strong></td><td>\(3.0 \times (40)^{1.12}\)</td><td><strong>184.92 PM</strong></td><td>\(2.5 \times (184.92)^{0.35}\)</td><td><strong>15.61 Months</strong></td><td><strong>11.9 ≈ 12 Persons</strong></td></tr>
-            <tr><td><strong>Embedded</strong></td><td>\(3.6 \times (40)^{1.20}\)</td><td><strong>297.07 PM</strong></td><td>\(2.5 \times (297.07)^{0.32}\)</td><td><strong>15.46 Months</strong></td><td><strong>19.2 ≈ 20 Persons</strong></td></tr>
+            <tr><td><strong>Philosophy</strong></td><td>Iterative, adaptive, evolutionary.</td><td>Linear, predictive, sequential.</td></tr>
+            <tr><td><strong>Requirements</strong></td><td>Fluid; changes embraced in any sprint.</td><td>Frozen early; changes incur heavy penalty.</td></tr>
+            <tr><td><strong>Delivery</strong></td><td>Frequent working increments (every 2-4 wks).</td><td>Single monolithic release at the end.</td></tr>
+            <tr><td><strong>Customer Role</strong></td><td>Continuous, on-site, daily collaboration.</td><td>Milestone review & final sign-off only.</td></tr>
         </tbody>
     </table>
-    <div class="answer-box">✓ Final Answer: Organic: 115.4 PM, 15.2 Mos | Semidetached: 184.9 PM, 15.6 Mos | Embedded: 297.1 PM, 15.5 Mos</div>
 </div>
 
-<div class="card num">
+<!-- U1.2: WATERFALL MODEL -->
+<div class="card u1">
     <div class="card-header">
-        <span class="q-title">🎯 NUMERICAL 4: Earned Value Analysis (EVA) Health Audit</span>
-        <span class="badge badge-13m">FULL 13 MARKS</span>
+        <span class="q-title">Q2: The Classical Waterfall Model & Phased Progression</span>
+        <span class="badge-13m">13 MARKS</span>
     </div>
     <div class="q-text">
-        BAC = $200,000, Planned Duration = 12 months. At Month 6: PV = $100,000, EV = $80,000, AC = $95,000. Calculate CV, SV, CPI, SPI, EAC, and ETC.
+        (a) Explain the Classical Waterfall Model with a neat phase diagram. Detail the activities and deliverables of each phase. [8M]<br>
+        (b) Discuss the major limitations of the Waterfall model. When is it appropriate to use? [5M]
     </div>
-    <div class="step-title">Step-by-Step Variance & Forecasting Calculations</div>
-    <p>• <strong>Cost Variance:</strong> \(CV = EV - AC = 80,000 - 95,000 = \mathbf{-\$15,000}\) (\(CV < 0 \implies\) <strong>Over Budget</strong>).
-    <br>• <strong>Schedule Variance:</strong> \(SV = EV - PV = 80,000 - 100,000 = \mathbf{-\$20,000}\) (\(SV < 0 \implies\) <strong>Behind Schedule</strong>).
-    <br>• <strong>Cost Performance Index:</strong> \(CPI = \frac{EV}{AC} = \frac{80,000}{95,000} = \mathbf{0.842}\) (Only $0.84 of work delivered per dollar spent).
-    <br>• <strong>Schedule Performance Index:</strong> \(SPI = \frac{EV}{PV} = \frac{80,000}{100,000} = \mathbf{0.800}\) (Running at 80% planned velocity).
-    <br>• <strong>Estimate at Completion:</strong> \(EAC = \frac{BAC}{CPI} = \frac{200,000}{0.8421} = \mathbf{\$237,500}\) (Projected cost overrun: $37,500).
-    <br>• <strong>Estimate to Complete:</strong> \(ETC = EAC - AC = 237,500 - 95,000 = \mathbf{\$142,500}\).</p>
-    <div class="answer-box">✓ Final Answer: CV = -$15k (Over Budget) | SV = -$20k (Behind Schedule) | CPI = 0.842 | SPI = 0.800 | EAC = $237,500</div>
+    <div class="step-title">Part (a): Phases & Deliverables</div>
+    <p><strong>Phase Sequence:</strong> Communication \(\to\) Planning \(\to\) Modeling \(\to\) Construction \(\to\) Deployment.</p>
+    <p>• <strong>1. Communication (Requirements):</strong> Gathers functional/non-functional needs. <em>Deliverable:</em> <strong>SRS</strong>.<br>
+    • <strong>2. Planning:</strong> Scope, WBS, COCOMO cost, and schedule. <em>Deliverable:</em> <strong>SPMP</strong>.<br>
+    • <strong>3. Modeling (Analysis & Design):</strong> Data structures, architectural style, component logic. <em>Deliverables:</em> <strong>HLD & LLD</strong>.<br>
+    • <strong>4. Construction:</strong> Source coding and unit/integration testing. <em>Deliverables:</em> <strong>Compiled Code & Test Reports</strong>.<br>
+    • <strong>5. Deployment:</strong> User installation, training, and ongoing corrective/adaptive maintenance.</p>
+    <div class="step-title">Part (b): Limitations & When to Use</div>
+    <p>• <strong>Weaknesses:</strong> (1) Late working software (arrives at construction); (2) High risk of late-stage project failure if requirements were flawed; (3) "Blocking states" where teams wait for predecessor sign-offs.<br>
+    • <strong>When to Use:</strong> Stable compilers, operating system utilities, or legacy migration where specifications are 100% frozen upfront.</p>
+</div>
+
+<!-- U1.3: EXTREME PROGRAMMING (XP) -->
+<div class="card u1">
+    <div class="card-header">
+        <span class="q-title">Q3: Extreme Programming (XP) Values, Lifecycle & Core Practices</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Describe the 4 core values of XP and illustrate the XP lifecycle. [7M]<br>
+        (b) Explain six core practices of XP, focusing on Pair Programming and Test-Driven Development (TDD). [6M]
+    </div>
+    <div class="step-title">Part (a): XP Values & Lifecycle</div>
+    <p>• <strong>4 Values:</strong> (1) Communication (verbal over written), (2) Simplicity (code only for today), (3) Feedback (continuous test & customer feedback), (4) Courage (fearless refactoring).<br>
+    • <strong>Lifecycle:</strong> User Stories (index cards) \(\to\) Release Plan \(\to\) Spike Solutions (for risks) \(\to\) Iteration Planning \(\to\) TDD Unit Test \(\to\) Pair Programming \(\to\) Continuous Integration \(\to\) Acceptance Test \(\to\) Production Release.</p>
+    <div class="step-title">Part (b): Core Practices (Pair Programming & TDD)</div>
+    <p>• <strong>Pair Programming:</strong> Two programmers, one computer. <strong>Driver</strong> types code; <strong>Navigator</strong> reviews logic, catches syntax flaws, and plans next steps. Switches roles regularly. Reduces defects by 15–20% and eliminates single-point-of-failure knowledge.<br>
+    • <strong>Test-Driven Development (TDD):</strong> Automated unit test written <em>before</em> production code (Red-Green-Refactor). Guarantees 100% test coverage and clean modular design.<br>
+    • <strong>Other Practices:</strong> Continuous Integration (multiple daily commits), Small Releases (2-3 weeks), Simple Design (YAGNI), On-site customer.</p>
+</div>
+
+<!-- U1.4: SPIRAL MODEL -->
+<div class="card u1">
+    <div class="card-header">
+        <span class="q-title">Q4: Boehm's Spiral Model & Risk-Driven Lifecycle</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Draw and explain Barry Boehm's Spiral Model. Detail activities in each of the four quadrants. [8M]<br>
+        (b) Why is it termed "risk-driven"? State its advantages and disadvantages. [5M]
+    </div>
+    <div class="step-title">Part (a): The Four Quadrants</div>
+    <p>• <strong>Quadrant I (Objective Setting):</strong> Identify iteration goals, alternative technical designs, and operating constraints.<br>
+    • <strong>Quadrant II (Risk Assessment & Reduction):</strong> Rigorous risk analysis; evaluate alternatives using prototyping, simulation, and benchmarking.<br>
+    • <strong>Quadrant III (Engineering & Development):</strong> Implement and verify software artifact (early spirals = architectural prototypes; later = production software).<br>
+    • <strong>Quadrant IV (Planning & Review):</strong> Customer reviews deliverables; decide whether to continue, pivot, or terminate project.</p>
+    <div class="step-title">Part (b): Risk-Driven Nature & Trade-Offs</div>
+    <p>• <strong>Why Risk-Driven:</strong> Effort spent in each cycle is determined by the severity of the identified risks. If high risk cannot be mitigated in Quadrant II, the project stops immediately.<br>
+    • <strong>Pros:</strong> Explicit risk mitigation; accommodates changes; early user visibility via prototypes.<br>
+    • <strong>Cons:</strong> Highly dependent on expert risk assessment; high process overhead; costly for small systems.</p>
+</div>
+
+<!-- U1.5: V-MODEL -->
+<div class="card u1">
+    <div class="card-header">
+        <span class="q-title">Q5: The V-Model: Verification, Validation & Defect Prevention</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Illustrate the V-Model. Differentiate Verification and Validation. [7M]<br>
+        (b) Explain phase correspondence and the Defect Prevention Principle. [6M]
+    </div>
+    <div class="step-title">Part (a): Verification vs Validation</div>
+    <p>• <strong>Left Wing (Verification):</strong> Requirements \(\to\) System Design \(\to\) Architecture \(\to\) Module Design. Static reviews/inspections <em>without</em> code execution ("Are we building the product right?").<br>
+    • <strong>Right Wing (Validation):</strong> Acceptance Testing \(\to\) System Testing \(\to\) Integration Testing \(\to\) Unit Testing. Dynamic testing <em>with</em> code execution ("Are we building the right product?").</p>
+    <div class="step-title">Part (b): Phase Correspondence & Defect Prevention</div>
+    <p>• Requirements \(\Longleftrightarrow\) Acceptance Testing; System Design \(\Longleftrightarrow\) System Testing; Architecture \(\Longleftrightarrow\) Integration Testing; Module Design \(\Longleftrightarrow\) Unit Testing.<br>
+    • <strong>Defect Prevention Principle:</strong> Test cases are designed concurrently with specifications. Writing acceptance test cases during Requirements Analysis uncovers ambiguities and missing requirements early, preventing defects from entering the code.</p>
+</div>
+
+<!-- U1.6: INCREMENTAL MODEL -->
+<div class="card u1">
+    <div class="card-header">
+        <span class="q-title">Q6: The Incremental Model: Staged Delivery</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Explain the Incremental Model with a neat block diagram. How does it deliver operational capabilities in stages? [7M]<br>
+        (b) Compare Incremental with Prototyping and Waterfall across risk and delivery timeline. [6M]
+    </div>
+    <div class="step-title">Part (a): Mechanism of Incremental Delivery</div>
+    <p>Applies linear sequences in a staggered, iterative fashion. <strong>Increment 1</strong> implements core, non-negotiable capabilities (e.g. basic word processor). Users put it to immediate operational use. <strong>Increment 2 & Successive Increments</strong> add features (spell-check, formatting) based on real user feedback. Allows flexible staffing: core team builds Increment 1, specialists added later.</p>
+    <div class="step-title">Part (b): Comparison Matrix</div>
+    <p>• <strong>Waterfall:</strong> Single monolithic delivery at the end; frozen requirements; high risk.<br>
+    • <strong>Prototyping:</strong> Throwaway or evolutionary code; clarifies unclear requirements; low risk.<br>
+    • <strong>Incremental:</strong> Staged operational deliveries; core requirements known; medium risk.</p>
+</div>
+
+<!-- ========================================== -->
+<!-- UNIT 2: REQUIREMENTS ANALYSIS & SPECIFICATION -->
+<!-- ========================================== -->
+<div class="unit-header u2">
+    <span>UNIT 2: REQUIREMENTS ANALYSIS & SPECIFICATION</span>
+    <span>FULL 13-MARK MODEL SOLUTIONS</span>
+</div>
+
+<!-- U2.1: SRS -->
+<div class="card u2">
+    <div class="card-header">
+        <span class="q-title">Q1: IEEE 830-1998 Software Requirements Specification (SRS)</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Outline the standard IEEE 830-1998 structure for an SRS document. Detail Section 3. [7M]<br>
+        (b) Explain the six essential characteristics of a high-quality SRS. [6M]
+    </div>
+    <div class="step-title">Part (a): IEEE 830 Standard Architecture</div>
+    <div class="code-box">
+1. INTRODUCTION (1.1 Purpose, 1.2 Scope, 1.3 Definitions/Acronyms, 1.4 References, 1.5 Overview)
+2. OVERALL DESCRIPTION (2.1 Product Perspective, 2.2 Product Functions, 2.3 User Characteristics, 2.4 General Constraints, 2.5 Assumptions)
+3. SPECIFIC REQUIREMENTS (Core Technical Section):
+   3.1 External Interface Requirements (User UI, Hardware, Software OS/DB, Communication TLS/HTTP)
+   3.2 Functional Requirements (Inputs, Processing, Outputs, Business Logic)
+   3.3 Performance Requirements (Response time < 2s, 5000 TPS)
+   3.4 Design Constraints (Mandatory stack: Java 21, PostgreSQL)
+   3.5 Software Quality Attributes (Reliability, Availability, Security, Portability)
+    </div>
+    <div class="step-title">Part (b): Six Characteristics of a Good SRS</div>
+    <p>1. <strong>Unambiguous:</strong> Exactly one interpretation for every statement.<br>
+    2. <strong>Complete:</strong> All functional, performance, and security constraints included.<br>
+    3. <strong>Consistent:</strong> No contradictory requirements.<br>
+    4. <strong>Verifiable:</strong> Must be testable through an objective, cost-effective test method.<br>
+    5. <strong>Modifiable:</strong> Organized structure (cross-references) allows easy updates.<br>
+    6. <strong>Traceable:</strong> Forward/backward traceability via Requirements Traceability Matrix (RTM).</p>
+</div>
+
+<!-- U2.2: RE PROCESS -->
+<div class="card u2">
+    <div class="card-header">
+        <span class="q-title">Q2: The Requirements Engineering Process & RTM</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Diagram and describe the four key phases of the Requirements Engineering Process. [7M]<br>
+        (b) Explain elicitation techniques and the role of the Requirements Traceability Matrix (RTM). [6M]
+    </div>
+    <div class="step-title">Part (a): Four RE Phases</div>
+    <p>1. <strong>Feasibility Study:</strong> Technical (skills/tools), Economic (CBA, ROI), Operational (user acceptance).<br>
+    2. <strong>Requirements Elicitation & Analysis:</strong> Discovery of user needs; resolving conflicts.<br>
+    3. <strong>Requirements Specification:</strong> Formal documentation into the IEEE 830 SRS.<br>
+    4. <strong>Requirements Validation:</strong> Formal reviews, inspections, prototyping, and test-case generation.</p>
+    <div class="step-title">Part (b): Elicitation & Requirements Traceability Matrix (RTM)</div>
+    <p>• <strong>Elicitation Methods:</strong> Interviews (structured/unstructured), JAD (Joint Application Development workshops), Surveys, Use Cases.<br>
+    • <strong>RTM:</strong> A grid mapping each requirement ID to its architectural design class, code file, and test case ID. Prevents scope creep, ensures 100% test coverage, and enables instant change impact analysis.</p>
+</div>
+
+<!-- U2.3: PETRI NETS -->
+<div class="card u2">
+    <div class="card-header">
+        <span class="q-title">Q3: Petri Nets: Formal Definition, Firing Rules & Modeling</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Define a Petri Net as a mathematical 5-tuple. Describe primitives and firing rules. [7M]<br>
+        (b) Model a Producer-Consumer system with a bounded buffer. Trace state transitions. [6M]
+    </div>
+    <div class="step-title">Part (a): Formal 5-Tuple & Firing Rules</div>
+    <p>$$\mathbf{PN = (P, T, F, W, M_0)}$$</p>
+    <p>• \(P\): Places (circles); \(T\): Transitions (bars); \(F\): Flow arcs; \(W\): Arc weights; \(M_0\): Initial marking.<br>
+    • <strong>Enabling Condition:</strong> Transition \(t\) is enabled iff every input place \(p\) has tokens \(\ge W(p, t)\).<br>
+    • <strong>Firing Rule:</strong> Consumes \(W(p, t)\) tokens from input places, deposits \(W(t, p')\) tokens into output places:
+    \[ M_{\text{new}}(p) = M_{\text{old}}(p) - W(p, t) + W(t, p) \]</p>
+    <div class="step-title">Part (b): Producer-Consumer Synchronization</div>
+    <p>• Places: \(P_1\) (Producer Ready), \(P_2\) (Buffer Empty), \(P_3\) (Buffer Full), \(P_4\) (Consumer Ready).<br>
+    • Initial Marking: \(M_0 = [P_1: 1, \ P_2: 1, \ P_3: 0, \ P_4: 1]\).<br>
+    • <strong>Step 1 (\(T_1\) fires - Produce & Deposit):</strong> Consumes from \(P_1, P_2\); deposits into \(P_1, P_3 \implies M_1 = [1, 0, 1, 1]\).<br>
+    • <strong>Step 2 (\(T_2\) fires - Fetch & Consume):</strong> Consumes from \(P_3, P_4\); deposits into \(P_4, P_2 \implies M_2 = [1, 1, 0, 1] = M_0\).<br>
+    ✓ Guarantees mutual exclusion and prevents buffer underflow/overflow.</p>
+</div>
+
+<!-- U2.4: FUNCTIONAL VS NON-FUNCTIONAL -->
+<div class="card u2">
+    <div class="card-header">
+        <span class="q-title">Q4: Functional vs Non-Functional Requirements & FURPS+</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Distinguish Functional and Non-Functional Requirements. Explain FURPS+. [7M]<br>
+        (b) Provide quantifiable, testable engineering metrics for NFRs. [6M]
+    </div>
+    <div class="step-title">Part (a): FR vs NFR & FURPS+ Framework</div>
+    <p>• <strong>Functional Requirements (FR):</strong> What the system does (computations, data manipulation, services). E.g. "Calculate simple interest \(I = P \cdot r \cdot t\)".<br>
+    • <strong>Non-Functional Requirements (NFR):</strong> Quality constraints and attributes (how well the system performs).<br>
+    • <strong>FURPS+:</strong> <strong>F</strong>unctionality (feature set, security), <strong>U</strong>sability (aesthetics, human factors), <strong>R</strong>eliability (failure frequency, MTBF), <strong>P</strong>erformance (speed, TPS, memory), <strong>S</strong>upportability (maintainability, testability), <strong>"+"</strong> (design, interface, legal constraints).</p>
+    <div class="step-title">Part (b): Quantifiable NFR Metrics</div>
+    <p>• <em>Performance:</em> Response time \(\le 1.5\)s for 95% of requests under 2000 users; Throughput \(\ge 3500\) TPS.<br>
+    • <em>Reliability:</em> Availability \(\ge 99.99\%\); Mean Time to Recover (\(MTTR\)) \(\le 30\) seconds.<br>
+    • <em>Usability:</em> 90% of novice users complete account creation in \(< 3\) minutes without operator assistance.</p>
+</div>
+
+<!-- ========================================== -->
+<!-- UNIT 3: SOFTWARE DESIGN & ARCHITECTURE -->
+<!-- ========================================== -->
+<div class="unit-header u3">
+    <span>UNIT 3: SOFTWARE DESIGN & ARCHITECTURE</span>
+    <span>FULL 13-MARK MODEL SOLUTIONS</span>
+</div>
+
+<!-- U3.1: DESIGN PROCESS & PYRAMID -->
+<div class="card u3">
+    <div class="card-header">
+        <span class="q-title">Q1: The Software Design Process & Pressman's 4-Level Design Pyramid</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Illustrate Pressman's 4-Level Software Design Pyramid and explain how each level transforms analysis models. [7M]<br>
+        (b) Differentiate HLD and LLD. Explain Fan-In vs Fan-Out heuristics. [6M]
+    </div>
+    <div class="step-title">Part (a): The 4-Level Design Pyramid</div>
+    <div class="code-box">
+             / \
+            / [4] \   COMPONENT-LEVEL DESIGN (Algorithms, PDL, Decision Tables)
+           /-------\
+          /   [3]   \ INTERFACE DESIGN (User GUI, Internal/External APIs)
+         /-----------\
+        /     [2]     \ ARCHITECTURAL DESIGN (Subsystems, Connectors, Styles)
+       /---------------\
+      /       [1]       \ DATA / CLASS DESIGN (ER Schemas, Data Structures)
+    </div>
+    <p>1. <strong>Data/Class Design (Base):</strong> Transforms analysis classes into DB schemas and data structures.<br>
+    2. <strong>Architectural Design:</strong> Establishes system skeleton, subsystem relations, and architectural styles.<br>
+    3. <strong>Interface Design:</strong> Defines interaction flow between components, external systems, and human users.<br>
+    4. <strong>Component-Level Design (Apex):</strong> Converts structural elements into detailed procedural algorithms and pseudocode.</p>
+    <div class="step-title">Part (b): HLD vs LLD & Design Heuristics</div>
+    <p>• <strong>HLD:</strong> System architecture, subsystem boundaries, DB design. Audience: Architects, clients.<br>
+    • <strong>LLD:</strong> Detailed method logic, flowcharts, pseudocode. Audience: Developers, testers.<br>
+    • <strong>Fan-Out:</strong> Number of directly invoked submodules (\(3 \le \text{Fan-Out} \le 7\)). High fan-out indicates control overload.<br>
+    • <strong>Fan-In:</strong> Number of calling parent modules. <strong>Maximize Fan-In</strong> for maximum reusability.</p>
+</div>
+
+<!-- U3.2: ARCHITECTURAL STYLES -->
+<div class="card u3">
+    <div class="card-header">
+        <span class="q-title">Q2: Software Architectural Styles & Patterns</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Explain Data-Centered Architecture and Data-Flow (Pipe-and-Filter) Architecture with neat diagrams. [7M]<br>
+        (b) Explain Layered Architecture and Event-Driven Architecture with trade-offs. [6M]
+    </div>
+    <div class="step-title">Part (a): Data-Centered & Data-Flow Styles</div>
+    <p>• <strong>Data-Centered (Repository / Blackboard):</strong> Central data store accessed by independent client components. Clients add/modify data. <em>Pro:</em> High modularity. <em>Con:</em> Single point of failure/bottleneck.<br>
+    • <strong>Data-Flow (Pipe-and-Filter):</strong> Unidirectional data streams (Pipes) processed by transformation nodes (Filters). <em>Pro:</em> Reusable, parallelizable. <em>Con:</em> Inefficient for interactive systems.</p>
+    <div class="step-title">Part (b): Layered & Event-Driven Styles</div>
+    <p>• <strong>Layered (Call-and-Return):</strong> Presentation \(\to\) Business Logic \(\to\) Data Access \(\to\) Database. Each layer only talks to adjacent layers. <em>Pro:</em> Clean separation of concerns. <em>Con:</em> Multi-layer performance overhead.<br>
+    • <strong>Event-Driven (Pub-Sub):</strong> Producers emit events to an Event Broker; decoupled consumers subscribe. <em>Pro:</em> High scalability, asynchronous. <em>Con:</em> Hard to trace/debug.</p>
+</div>
+
+<!-- U3.3: 12 DESIGN CONCEPTS -->
+<div class="card u3">
+    <div class="card-header">
+        <span class="q-title">Q3: Pressman's 12 Fundamental Software Design Concepts</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        Detail the twelve fundamental design concepts. Emphasize Functional Independence (Cohesion vs Coupling). [13M]
+    </div>
+    <div class="step-title">The 12 Concepts Explained</div>
+    <p>1. <strong>Abstraction:</strong> Data/procedural abstraction ignoring low-level details.<br>
+    2. <strong>Architecture:</strong> The overall structural layout and component relationships.<br>
+    3. <strong>Patterns:</strong> Proven solutions to recurring problems (Observer, Singleton).<br>
+    4. <strong>Separation of Concerns:</strong> Subdividing complex systems into independent parts.<br>
+    5. <strong>Modularity:</strong> Decomposing software into separately addressable modules.<br>
+    6. <strong>Information Hiding (Parnas):</strong> Restricting access to internal module details.<br>
+    7. <strong>Functional Independence:</strong> Single focused task, minimal coupling.<br>
+    8. <strong>Refinement (Wirth):</strong> Stepwise top-down decomposition of abstract statements into detail.<br>
+    9. <strong>Aspects:</strong> Modularizing cross-cutting concerns (logging, security).<br>
+    10. <strong>Refactoring:</strong> Restructuring code without changing external behavior.<br>
+    11. <strong>Object-Oriented Concepts:</strong> Inheritance, polymorphism, encapsulation.<br>
+    12. <strong>Design Classes:</strong> Entity, Boundary, and Controller implementation types.</p>
+    <div class="code-box">
+COHESION (WORST TO BEST): Coincidental -> Logical -> Temporal -> Procedural -> Communicational -> Sequential -> FUNCTIONAL (BEST)
+COUPLING (WORST TO BEST): Content (Worst) -> Common -> Control -> Stamp -> DATA (BEST) -> Uncoupled
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- UNIT 5: PROJECT MANAGEMENT & ESTIMATION -->
+<!-- ========================================== -->
+<div class="unit-header u5">
+    <span>UNIT 5: PROJECT MANAGEMENT & ESTIMATION</span>
+    <span>FULL 13-MARK MODEL SOLUTIONS</span>
+</div>
+
+<!-- U5.1: COCOMO -->
+<div class="card u5">
+    <div class="card-header">
+        <span class="q-title">Q1: Barry Boehm's COCOMO I Model & Worked Numerical</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Explain Basic COCOMO I development modes and formulas. [7M]<br>
+        (b) Sized at 35 KLOC, calculate Effort, Time, Staff, and Productivity for (i) Organic, and (ii) Embedded modes. [6M]
+    </div>
+    <div class="step-title">Part (a): Governing Equations</div>
+    <p>\[ \mathbf{E = a \cdot (KLOC)^b \text{ [PM]}}, \qquad \mathbf{D = c \cdot (E)^d \text{ [Months]}}, \qquad \mathbf{P = \frac{E}{D} \text{ [Persons]}} \]</p>
+    <p>• <strong>Organic:</strong> \(a=2.4, b=1.05, c=2.5, d=0.38\). (Small team, familiar domain).<br>
+    • <strong>Semidetached:</strong> \(a=3.0, b=1.12, c=2.5, d=0.35\). (Medium team, mixed experience).<br>
+    • <strong>Embedded:</strong> \(a=3.6, b=1.20, c=2.5, d=0.32\). (Tight constraints, flight control).</p>
+    <div class="step-title">Part (b): Step-by-Step Numerical Solution (KLOC = 35)</div>
+    <p><strong>(i) Organic Mode:</strong><br>
+    • \(E = 2.4 \times (35)^{1.05} = 2.4 \times 41.761 = \mathbf{100.23 \text{ PM}}\)<br>
+    • \(D = 2.5 \times (100.23)^{0.38} = 2.5 \times 5.764 = \mathbf{14.41 \text{ Months}}\)<br>
+    • Staff: \(P = 100.23 / 14.41 = \mathbf{6.96 \approx 7 \text{ Persons}}\)<br>
+    • Productivity: \(35,000 / 100.23 = \mathbf{349.2 \text{ LOC/PM}}\)</p>
+    <p><strong>(ii) Embedded Mode:</strong><br>
+    • \(E = 3.6 \times (35)^{1.20} = 3.6 \times 71.026 = \mathbf{255.69 \text{ PM}}\)<br>
+    • \(D = 2.5 \times (255.69)^{0.32} = 2.5 \times 5.922 = \mathbf{14.81 \text{ Months}}\)<br>
+    • Staff: \(P = 255.69 / 14.81 = \mathbf{17.26 \approx 18 \text{ Persons}}\)<br>
+    • Productivity: \(35,000 / 255.69 = \mathbf{136.9 \text{ LOC/PM}}\)</p>
+    <div class="answer-box">✓ Final Answer: Organic = 100.2 PM (7 Staff) | Embedded = 255.7 PM (18 Staff)</div>
+</div>
+
+<!-- U5.2: EARNED VALUE ANALYSIS -->
+<div class="card u5">
+    <div class="card-header">
+        <span class="q-title">Q2: Earned Value Analysis (EVA) Health Audit & Numerical</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Define PV, EV, AC, CV, SV, CPI, SPI, EAC. State interpretation rules. [7M]<br>
+        (b) BAC = $150,000, 10 months. Month 5: PV = $75,000, EV = $60,000, AC = $70,000. Compute CV, SV, CPI, SPI, EAC, ETC. [6M]
+    </div>
+    <div class="step-title">Part (a): Formulas & Rules</div>
+    <p>\[ CV = EV - AC, \quad SV = EV - PV, \quad CPI = \frac{EV}{AC}, \quad SPI = \frac{EV}{PV}, \quad EAC = \frac{BAC}{CPI} \]</p>
+    <p>• \(CV < 0 \implies\) Over Budget (Critical); \(SV < 0 \implies\) Behind Schedule (Critical).<br>
+    • \(CPI < 1.0 \implies\) Spending efficiency is deficient; \(SPI < 1.0 \implies\) Velocity is slow.</p>
+    <div class="step-title">Part (b): Step-by-Step Numerical Calculations</div>
+    <p>• <strong>Cost Variance:</strong> \(CV = 60,000 - 70,000 = \mathbf{-\$10,000}\) (Project is \$10,000 OVER budget).<br>
+    • <strong>Schedule Variance:</strong> \(SV = 60,000 - 75,000 = \mathbf{-\$15,000}\) (Project is \$15,000 BEHIND schedule).<br>
+    • <strong>Cost Performance Index:</strong> \(CPI = 60,000 / 70,000 = \mathbf{0.857}\) (Only \$0.86 value per \$1.00 spent).<br>
+    • <strong>Schedule Performance Index:</strong> \(SPI = 60,000 / 75,000 = \mathbf{0.800}\) (Progressing at 80% planned rate).<br>
+    • <strong>Estimate at Completion:</strong> \(EAC = 150,000 / 0.8571 = \mathbf{\$175,000}\) (Projected \$25,000 overrun).<br>
+    • <strong>Estimate to Complete:</strong> \(ETC = 175,000 - 70,000 = \mathbf{\$105,000}\).</p>
+    <div class="answer-box">✓ Final Answer: CV = -$10k (Over Budget) | SV = -$15k (Behind Schedule) | CPI = 0.857 | EAC = $175,000</div>
+</div>
+
+<!-- U5.3: RISK MANAGEMENT -->
+<div class="card u5">
+    <div class="card-header">
+        <span class="q-title">Q3: Risk Strategies, Exposure (RE) & Leverage (RRL)</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Distinguish Reactive vs Proactive risk strategies and classify software risks. [7M]<br>
+        (b) Define Risk Exposure (RE) and Risk Reduction Leverage (RRL). Solve investment decision problem. [6M]
+    </div>
+    <div class="step-title">Part (a): Taxonomies & Strategies</div>
+    <p>• <strong>Reactive ("Firefighting"):</strong> Team reacts only after crisis manifests.<br>
+    • <strong>Proactive:</strong> Formal identification, assessment, mitigation, and contingency planning before work starts.<br>
+    • <strong>Risk Categories:</strong> Project Risks (schedule/budget), Technical Risks (performance/design), Business Risks (market/viability), Known, Predictable, Unpredictable.</p>
+    <div class="step-title">Part (b): Formulas & Investment Problem</div>
+    <p>\[ \mathbf{RE = P \times C}, \qquad \mathbf{RRL = \frac{RE_{\text{before}} - RE_{\text{after}}}{\text{Cost of Action}}} \]</p>
+    <p>• Defect risk has \(P_1 = 0.25\), impact \(C = \$80,000 \implies RE_{\text{before}} = 0.25 \times 80,000 = \mathbf{\$20,000}\).<br>
+    • Automated test tool costs \(\$6,000\), reduces probability to \(P_2 = 0.05 \implies RE_{\text{after}} = 0.05 \times 80,000 = \mathbf{\$4,000}\).<br>
+    • \(RRL = \frac{20,000 - 4,000}{6,000} = \frac{16,000}{6,000} = \mathbf{2.67}\).<br>
+    ✓ Since \(\mathbf{RRL = 2.67 > 1.0}\), purchase is highly justified (returns \$2.67 in risk avoidance per \$1 spent).</p>
+</div>
+
+<!-- ========================================== -->
+<!-- UNIT 6: RISK MANAGEMENT & CASE TOOLS -->
+<!-- ========================================== -->
+<div class="unit-header u6">
+    <span>UNIT 6: RISK MANAGEMENT & CASE TOOLS</span>
+    <span>FULL 13-MARK MODEL SOLUTIONS</span>
+</div>
+
+<!-- U6.1: RMMM PLAN -->
+<div class="card u6">
+    <div class="card-header">
+        <span class="q-title">Q1: The RMMM Plan (Mitigation, Monitoring, Management)</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) What is an RMMM Plan? Explain Mitigation, Monitoring, and Management phases. [7M]<br>
+        (b) Design an RMMM table for "High Staff Turnover during Construction". [6M]
+    </div>
+    <div class="step-title">Part (a): The Three Pillars of RMMM</div>
+    <p>1. <strong>Mitigation (Proactive Avoidance):</strong> Steps taken <em>before</em> risk manifests to reduce probability/impact (cross-training, competitive compensation).<br>
+    2. <strong>Monitoring (Tracking):</strong> Observance of early warning symptoms (team overtime, absenteeism, backlog).<br>
+    3. <strong>Management (Contingency):</strong> Emergency actions executed <em>after</em> risk manifests to contain damage.</p>
+    <div class="step-title">Part (b): RMMM Table for High Staff Turnover</div>
+    <table class="data-table">
+        <thead><tr><th>Pillar</th><th>Operational Procedure & Action Plan</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Mitigation</strong></td><td>Enforce Pair Programming so knowledge is distributed; mandate detailed documentation; retention bonuses.</td></tr>
+            <tr><td><strong>Monitoring</strong></td><td>Track overtime hours (> 50 hrs/wk = burnout trigger); conduct monthly 1-on-1s; monitor commit frequency.</td></tr>
+            <tr><td><strong>Management</strong></td><td>Promote junior pair partner immediately; activate contract on-demand staffing; de-scope non-critical features.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- U6.2: CASE TOOLS -->
+<div class="card u6">
+    <div class="card-header">
+        <span class="q-title">Q2: CASE Tools Environment Architecture & Taxonomy</span>
+        <span class="badge-13m">13 MARKS</span>
+    </div>
+    <div class="q-text">
+        (a) Define CASE. Diagram integrated CASE environment architecture and the role of the OMS repository. [7M]<br>
+        (b) Classify Upper, Lower, and Integrated CASE tools. State tangible benefits. [6M]
+    </div>
+    <div class="step-title">Part (a): CASE Environment Architecture & OMS</div>
+    <div class="code-box">
+[ User Interface Layer (GUI / IDE) ]
+           |
+[ Tool Integration Services: Data, Control, Presentation ]
+           |
+[ Upper CASE: DFD/UML ]  <--->  [ Lower CASE: Compilers/Tests ]  <--->  [ Management: Jira/Gantt ]
+           \                           |                           /
+            +--------------------------+--------------------------+
+                                       |
+          [ OBJECT MANAGEMENT SYSTEM (OMS) CENTRAL REPOSITORY ]
+          (Metadata, Version History, RTM Traceability, Shared Schema)
+    </div>
+    <p>• <strong>OMS Role:</strong> Centralized relational database storing all project artifacts (requirements, models, code, tests). Ensures data integrity, prevents tool conflicts, and powers automated end-to-end traceability.</p>
+    <div class="step-title">Part (b): Taxonomy & Tangible Benefits</div>
+    <p>• <strong>Upper CASE:</strong> Early phases (Requirements, DFD, UML, System Design). E.g. StarUML, Enterprise Architect.<br>
+    • <strong>Lower CASE:</strong> Construction & Testing (Compilers, Debuggers, Static Analyzers). E.g. SonarQube, JUnit.<br>
+    • <strong>I-CASE:</strong> Seamless lifecycle integration across a single OMS repository.<br>
+    • <strong>Benefits:</strong> 30–40% productivity boost via auto code generation; early defect elimination; automated documentation.</p>
 </div>
 
 </body>
