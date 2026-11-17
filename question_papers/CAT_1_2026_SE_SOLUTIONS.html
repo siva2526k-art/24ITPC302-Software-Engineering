@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>24ITPC302 CAT-I Model Exam Solutions</title>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+
+@page {
+    size: A4;
+    margin: 14mm 12mm 14mm 12mm;
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8.5pt;
+        color: #64748b;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    line-height: 1.5;
+    font-size: 9.5pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    text-align: center;
+    border-bottom: 2.5px solid #0369a1;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+
+.college-name {
+    font-size: 14pt;
+    font-weight: 800;
+    color: #0369a1;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.college-sub {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #475569;
+    margin: 2px 0 4px 0;
+}
+
+.exam-title {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 4px 0;
+    background-color: #f0f9ff;
+    display: inline-block;
+    padding: 3px 16px;
+    border-radius: 4px;
+    border: 1px solid #bae6fd;
+}
+
+.meta-table {
+    width: 100%;
+    margin-top: 6px;
+    font-size: 8.5pt;
+    border-collapse: collapse;
+}
+
+.meta-table td {
+    padding: 2px 6px;
+    border: none;
+}
+
+.part-header {
+    background: linear-gradient(90deg, #0369a1, #0284c7);
+    color: white;
+    font-size: 10.5pt;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+}
+
+.question-card {
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #0284c7;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    page-break-inside: avoid;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #cbd5e1;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.q-title {
+    font-weight: 700;
+    font-size: 10pt;
+    color: #0369a1;
+}
+
+.q-badge {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.q-text {
+    font-style: italic;
+    color: #334155;
+    background-color: #f8fafc;
+    border-left: 3px solid #94a3b8;
+    padding: 5px 8px;
+    margin: 4px 0 8px 0;
+    font-size: 9pt;
+}
+
+.solution-heading {
+    color: #047857;
+    font-weight: 700;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+.step-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-size: 9pt;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 8pt;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.answer-box {
+    background-color: #f0fdf4;
+    border: 1.5px solid #22c55e;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-top: 6px;
+    font-weight: 700;
+    color: #15803d;
+    font-size: 9pt;
+}
+
+.or-divider {
+    text-align: center;
+    font-weight: 800;
+    color: #dc2626;
+    margin: 10px 0;
+    font-size: 10.5pt;
+    letter-spacing: 1.5px;
+}
+
+.code-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-family: Consolas, monospace;
+    font-size: 8pt;
+    margin: 5px 0;
+    line-height: 1.35;
+    white-space: pre-wrap;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header-container">
+    <div class="college-name">Sri Sai Ram Engineering College (Autonomous)</div>
+    <div class="college-sub">West Tambaram, Chennai – 600 044 | Affiliated to Anna University, Chennai</div>
+    <div class="college-sub">DEPARTMENT OF INFORMATION TECHNOLOGY & COMPUTER SCIENCE — REGULATIONS 2024</div>
+    <div class="exam-title">CONTINUOUS ASSESSMENT TEST – I (CAT-I) — MODEL EXAM QUESTION PAPER & SOLUTIONS</div>
+    <table class="meta-table">
+        <tr>
+            <td><strong>Course Code & Title:</strong> 24ITPC302 – Software Engineering</td>
+            <td><strong>Max Marks:</strong> 50 Marks</td>
+            <td><strong>Duration:</strong> 1 ½ Hours</td>
+        </tr>
+        <tr>
+            <td><strong>Degree & Branch:</strong> B.Tech IT / B.E. CSE (Semester III)</td>
+            <td><strong>Scope:</strong> Units I, II, III (Prescribed Faculty Priority Topics)</td>
+            <td><strong>Academic Year:</strong> 2026</td>
+        </tr>
+    </table>
+</div>
+
+<div class="part-header">PART – A (5 × 2 = 10 Marks) — Answer ALL Questions</div>
+
+<!-- Q1 -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 1</span>
+        <span class="q-badge">2 Marks | K2 | Unit 1</span>
+    </div>
+    <div class="q-text">State the four core values of the Agile Manifesto.</div>
+    <div class="solution-heading">Model Answer:</div>
+    <p>The Agile Manifesto declares that we value:<br>
+    1. <strong>Individuals and interactions</strong> over processes and tools.<br>
+    2. <strong>Working software</strong> over comprehensive documentation.<br>
+    3. <strong>Customer collaboration</strong> over contract negotiation.<br>
+    4. <strong>Responding to change</strong> over following a plan.</p>
+</div>
+
+<!-- Q2 -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 2</span>
+        <span class="q-badge">2 Marks | K2 | Unit 1</span>
+    </div>
+    <div class="q-text">Differentiate between Verification and Validation in the V-Model.</div>
+    <div class="solution-heading">Model Answer:</div>
+    <p>• <strong>Verification (Left Wing):</strong> Static evaluation of work products (reviews, inspections) <em>without</em> code execution to answer: <em>"Are we building the product right?"</em><br>
+    • <strong>Validation (Right Wing):</strong> Dynamic execution of compiled software (Unit, Integration, System, Acceptance testing) to answer: <em>"Are we building the right product?"</em></p>
+</div>
+
+<!-- Q3 -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 3</span>
+        <span class="q-badge">2 Marks | K2 | Unit 2</span>
+    </div>
+    <div class="q-text">List four essential quality characteristics of a good Software Requirements Specification (SRS) under IEEE 830.</div>
+    <div class="solution-heading">Model Answer:</div>
+    <p>1. <strong>Unambiguous:</strong> Exactly one interpretation exists for every requirement statement.<br>
+    2. <strong>Complete:</strong> Covers all functional, performance, design constraints, and responses to invalid inputs.<br>
+    3. <strong>Consistent:</strong> No internal contradictions between requirements.<br>
+    4. <strong>Verifiable:</strong> A cost-effective, objective testing procedure can prove compliance.</p>
+</div>
+
+<!-- Q4 -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 4</span>
+        <span class="q-badge">2 Marks | K2 | Unit 2</span>
+    </div>
+    <div class="q-text">Define a Petri Net formally and state the transition firing rule.</div>
+    <div class="solution-heading">Model Answer:</div>
+    <p>A Petri Net is a 5-tuple \(\mathbf{PN = (P, T, F, W, M_0)}\) where \(P\) is Places, \(T\) is Transitions, \(F\) is Flow arcs, \(W\) is Arc weights, and \(M_0\) is Initial marking.<br>
+    <strong>Firing Rule:</strong> Transition \(t\) is enabled iff \(\forall p \in I(t), M(p) \ge W(p, t)\). Upon firing, it consumes \(W(p, t)\) tokens from each input place and deposits \(W(t, p')\) tokens into each output place.</p>
+</div>
+
+<!-- Q5 -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 5</span>
+        <span class="q-badge">2 Marks | K2 | Unit 3</span>
+    </div>
+    <div class="q-text">Distinguish between Cohesion and Coupling. State the most desirable level for each.</div>
+    <div class="solution-heading">Model Answer:</div>
+    <p>• <strong>Cohesion:</strong> Measure of internal functional strength of elements within a module. <em>Most Desirable:</em> <strong>Functional Cohesion (Highest)</strong>.<br>
+    • <strong>Coupling:</strong> Measure of interdependence between software modules. <em>Most Desirable:</em> <strong>Data Coupling / Uncoupled (Lowest)</strong>.<br>
+    <em>Golden Rule:</em> <strong>Maximize Cohesion, Minimize Coupling!</strong></p>
+</div>
+
+<div class="part-header">PART – B (3 × 13 or 14 = 40 Marks) — Answer Either (a) OR (b) from each Question</div>
+
+<!-- Q6 (Unit 1) -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 6 (a)</span>
+        <span class="q-badge">13 Marks | K3 | Unit 1</span>
+    </div>
+    <div class="q-text">
+        (i) Explain Barry Boehm's Spiral Model of software development with a neat diagram. Describe activities in each of the four quadrants and explain why it is referred to as "risk-driven". [8M]<br>
+        (ii) Compare and contrast the Waterfall Model with the Spiral Model across 5 project parameters. [5M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): Boehm's Spiral Model & The 4 Quadrants [8 Marks]</div>
+    <p>Barry Boehm (1988) designed the Spiral Model as an evolutionary, risk-driven lifecycle model coupling prototyping with Waterfall controls.</p>
+    <div class="code-box">
+             QUADRANT II (Risk Assessment)     |    QUADRANT I (Objectives & Constraints)
+  - Perform thorough risk analysis            |  - Identify iteration objectives
+  - Build simulations, prototypes, benchmarks  |  - Establish alternative design approaches
+  ---------------------------------------------+---------------------------------------------
+            QUADRANT III (Development)         |    QUADRANT IV (Planning & Review)
+  - Code and verify software artifacts         |  - Client evaluates deliverables
+  - Unit, integration, and system tests       |  - Plan next phase / spiral turn
+    </div>
+    <p>• <strong>Why Risk-Driven:</strong> At every spiral cycle, effort is guided by the risk associated with that step. If Quadrant II reveals an insurmountable technical risk, development stops immediately, preventing massive financial waste.</p>
+    <div class="step-title">Part (ii): Waterfall vs Spiral Comparison Matrix [5 Marks]</div>
+    <table class="data-table">
+        <thead><tr><th>Parameter</th><th>Classical Waterfall</th><th>Boehm's Spiral Model</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Lifecycle Model</strong></td><td>Linear sequential, rigid forward stages.</td><td>Evolutionary, iterative spiral cycles.</td></tr>
+            <tr><td><strong>Risk Management</strong></td><td>Implicit; no formal risk assessment phase.</td><td>Explicit, mandatory risk analysis in Quadrant II.</td></tr>
+            <tr><td><strong>Requirement Changes</strong></td><td>Inflexible; demands frozen specs upfront.</td><td>Highly adaptive; accommodates evolving user needs.</td></tr>
+            <tr><td><strong>Working Software</strong></td><td>Available very late (Construction phase).</td><td>Early prototypes delivered in early spiral turns.</td></tr>
+            <tr><td><strong>Best Suited For</strong></td><td>Stable, well-understood systems (compilers).</td><td>High-risk, mission-critical enterprise systems.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="or-divider">--- OR ---</div>
+
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 6 (b)</span>
+        <span class="q-badge">13 Marks | K3 | Unit 1</span>
+    </div>
+    <div class="q-text">
+        (i) What is Extreme Programming (XP)? Describe the 4 core values and illustrate the XP development lifecycle. [7M]<br>
+        (ii) Detail the mechanisms, working principles, and engineering advantages of: (1) Pair Programming, and (2) Test-Driven Development (TDD). [6M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): XP Values & Development Lifecycle [7 Marks]</div>
+    <p>• <strong>4 Values:</strong> Communication (open verbal dialogue), Simplicity (build only for today's needs), Feedback (continuous testing and client reviews), Courage (fearless refactoring).<br>
+    • <strong>Lifecycle:</strong> User Stories (written on index cards) \(\to\) Release Planning (commitments) \(\to\) Spike Solutions (risk prototypes) \(\to\) Iteration Planning \(\to\) TDD Unit Test \(\to\) Pair Programming \(\to\) Continuous Integration (daily builds) \(\to\) Customer Acceptance Test \(\to\) Production Release.</p>
+    <div class="step-title">Part (ii): Pair Programming & Test-Driven Development [6 Marks]</div>
+    <p>• <strong>Pair Programming:</strong> Two engineers work on a single workstation. The <strong>Driver</strong> controls the keyboard and implements code; the <strong>Navigator</strong> reviews logic, checks corner cases, and plans ahead. Roles switch frequently. <em>Benefits:</em> 15–20% defect reduction, continuous peer review, knowledge dissemination, zero single points of failure.<br>
+    • <strong>Test-Driven Development (TDD):</strong> Developers write automated unit tests <em>before</em> writing production code (<strong>Red-Green-Refactor</strong> cycle). Code is written solely to make failing tests pass. <em>Benefits:</em> Guarantees 100% test coverage, modular decoupled code, complete confidence during refactoring.</p>
+</div>
+
+<!-- Q7 (Unit 2) -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 7 (a)</span>
+        <span class="q-badge">13 Marks | K3 | Unit 2</span>
+    </div>
+    <div class="q-text">
+        (i) Outline the standard IEEE 830-1998 format for an SRS document. Detail Section 3 (Specific Requirements). [7M]<br>
+        (ii) Describe the four phases of the Requirements Engineering Process and explain how the Requirements Traceability Matrix (RTM) is constructed. [6M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): IEEE 830 Standard Architecture [7 Marks]</div>
+    <div class="code-box">
+1. INTRODUCTION (1.1 Purpose, 1.2 Scope, 1.3 Definitions, 1.4 References, 1.5 Overview)
+2. OVERALL DESCRIPTION (2.1 Product Perspective, 2.2 Functions, 2.3 User Classes, 2.4 Constraints, 2.5 Dependencies)
+3. SPECIFIC REQUIREMENTS (Core Technical Section):
+   3.1 External Interface Requirements: User UI, Hardware, Software OS/DB, Communications TLS/HTTP
+   3.2 Functional Requirements: Inputs, Transformations, Logic, Outputs for each service
+   3.3 Performance Requirements: Latency < 200ms, Throughput 5000 TPS, Concurrency
+   3.4 Design Constraints: Tech stack constraints, coding standards, memory caps
+   3.5 Software System Attributes: Reliability, Availability (99.99%), Security, Portability
+    </div>
+    <div class="step-title">Part (ii): RE Process Phases & Requirements Traceability Matrix [6 Marks]</div>
+    <p>• <strong>Phases:</strong> (1) Feasibility Study (Technical, Economic CBA, Operational); (2) Requirements Elicitation & Analysis (Interviews, JAD workshops, Use cases); (3) Specification (IEEE 830 SRS); (4) Validation (Formal inspections, reviews, test generation).<br>
+    • <strong>RTM:</strong> A bidirectional table linking each requirement ID to its architectural design module, code source file, and test case ID. Guarantees 100% test coverage and prevents scope creep.</p>
+</div>
+
+<div class="or-divider">--- OR ---</div>
+
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 7 (b)</span>
+        <span class="q-badge">13 Marks | K3 | Unit 2</span>
+    </div>
+    <div class="q-text">
+        (i) Define a Petri Net formally as a 5-tuple. Explain the transition firing rule and how concurrency and mutual exclusion are modeled. [7M]<br>
+        (ii) Construct a Petri Net for a Producer-Consumer system with a bounded buffer of size 1. Trace markings across two transitions. [6M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): Formal 5-Tuple & Concurrency Modeling [7 Marks]</div>
+    <p>$$\mathbf{PN = (P, T, F, W, M_0)}$$</p>
+    <p>• \(P\): Places (circles); \(T\): Transitions (bars); \(F\): Flow arcs; \(W\): Arc weights; \(M_0\): Initial marking.<br>
+    • <strong>Enabling Condition:</strong> Transition \(t\) is enabled iff \(\forall p \in I(t), M(p) \ge W(p, t)\).<br>
+    • <strong>Firing Rule:</strong> Consumes \(W(p, t)\) tokens from each input place; deposits \(W(t, p')\) tokens into each output place.<br>
+    • <strong>Concurrency:</strong> Two transitions sharing no input places can fire independently in any order or simultaneously.</p>
+    <div class="step-title">Part (ii): Producer-Consumer Synchronization Model [6 Marks]</div>
+    <p>• Places: \(P_1\) (Producer Ready), \(P_2\) (Buffer Empty), \(P_3\) (Buffer Full), \(P_4\) (Consumer Ready).<br>
+    • Initial Marking: \(M_0 = [P_1: 1, \ P_2: 1, \ P_3: 0, \ P_4: 1]\).<br>
+    • <strong>Step 1 (\(T_1\) fires - Produce & Deposit):</strong> Consumes from \(P_1, P_2\); deposits into \(P_1, P_3 \implies M_1 = [1, 0, 1, 1]\).<br>
+    • <strong>Step 2 (\(T_2\) fires - Fetch & Consume):</strong> Consumes from \(P_3, P_4\); deposits into \(P_4, P_2 \implies M_2 = [1, 1, 0, 1] = M_0\).<br>
+    <div class="answer-box">✓ Proof: Mutual exclusion holds; buffer overflow and underflow are mathematically prevented.</div></p>
+</div>
+
+<!-- Q8 (Unit 3) -->
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 8 (a)</span>
+        <span class="q-badge">14 Marks | K3 | Unit 3</span>
+    </div>
+    <div class="q-text">
+        (i) Illustrate Pressman's 4-Level Software Design Pyramid and explain how each level transforms analysis models into design artifacts. [8M]<br>
+        (ii) Differentiate High-Level Design (HLD) and Low-Level Design (LLD). Explain the Fan-In vs Fan-Out heuristics. [6M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): The 4-Level Design Pyramid [8 Marks]</div>
+    <div class="code-box">
+             / \
+            / [4] \   COMPONENT-LEVEL DESIGN (Algorithms, PDL, Decision Tables)
+           /-------\
+          /   [3]   \ INTERFACE DESIGN (User GUI, Internal/External APIs)
+         /-----------\
+        /     [2]     \ ARCHITECTURAL DESIGN (Subsystems, Connectors, Arch Styles)
+       /---------------\
+      /       [1]       \ DATA / CLASS DESIGN (ER Schemas, Data Structures)
+    </div>
+    <p>1. <strong>Data/Class Design (Base):</strong> Transforms analysis classes into DB schemas and data structures.<br>
+    2. <strong>Architectural Design:</strong> Establishes system skeleton, subsystem relations, and architectural styles.<br>
+    3. <strong>Interface Design:</strong> Defines interaction flow between components, external systems, and human users.<br>
+    4. <strong>Component-Level Design (Apex):</strong> Converts structural elements into detailed procedural algorithms and pseudocode.</p>
+    <div class="step-title">Part (ii): HLD vs LLD & Design Heuristics [6 Marks]</div>
+    <p>• <strong>HLD:</strong> System architecture, subsystem boundaries, DB design. Audience: Architects, clients.<br>
+    • <strong>LLD:</strong> Detailed method logic, flowcharts, pseudocode. Audience: Developers, testers.<br>
+    • <strong>Fan-Out:</strong> Number of directly invoked submodules (\(3 \le \text{Fan-Out} \le 7\)). High fan-out indicates control overload.<br>
+    • <strong>Fan-In:</strong> Number of calling parent modules. <strong>Maximize Fan-In</strong> for maximum reusability.</p>
+</div>
+
+<div class="or-divider">--- OR ---</div>
+
+<div class="question-card">
+    <div class="question-header">
+        <span class="q-title">Question 8 (b)</span>
+        <span class="q-badge">14 Marks | K3 | Unit 3</span>
+    </div>
+    <div class="q-text">
+        (i) Explain four major Software Architectural Styles: Data-Centered, Data-Flow (Pipe-and-Filter), Layered, and Event-Driven. [8M]<br>
+        (ii) State and explain any six fundamental software design concepts formulated by Pressman, highlighting Cohesion and Coupling hierarchies. [6M]
+    </div>
+    <div class="solution-heading">Detailed Model Answer:</div>
+    <div class="step-title">Part (i): Four Architectural Styles [8 Marks]</div>
+    <p>• <strong>Data-Centered (Repository):</strong> Central data store accessed by independent clients. High modularity, but central store is a bottleneck.<br>
+    • <strong>Data-Flow (Pipe-and-Filter):</strong> Unidirectional data streams (Pipes) transformed by filters. Highly parallelizable, but poor for interactive UI.<br>
+    • <strong>Layered (Call-and-Return):</strong> Hierarchical tiers (UI \(\to\) Business Logic \(\to\) Data Access \(\to\) Database). Loose coupling; multi-layer overhead.<br>
+    • <strong>Event-Driven (Pub-Sub):</strong> Producers emit events to an Event Broker; subscribers react asynchronously. Highly scalable; hard to trace.</p>
+    <div class="step-title">Part (ii): Pressman's Design Concepts & Cohesion/Coupling [6 Marks]</div>
+    <p>• <strong>Key Concepts:</strong> Abstraction, Modularity, Information Hiding (Parnas), Refinement (Wirth), Refactoring, Functional Independence.<br>
+    • <strong>Cohesion Hierarchy (Worst \(\to\) Best):</strong> Coincidental \(\to\) Logical \(\to\) Temporal \(\to\) Procedural \(\to\) Communicational \(\to\) Sequential \(\to\) <strong>Functional (Best)</strong>.<br>
+    • <strong>Coupling Hierarchy (Worst \(\to\) Best):</strong> Content (Worst) \(\to\) Common \(\to\) Control \(\to\) Stamp \(\to\) <strong>Data (Best)</strong> \(\to\) Uncoupled.</p>
+</div>
+
+</body>
+</html>
