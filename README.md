@@ -36,6 +36,7 @@ This repository is a publication-grade, comprehensive learning and exam-preparat
 | **13-Mark Solved Solutions** | University combo questions with diagrams and full marks distribution | [13_MARK_SOLUTIONS.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/solved_problems/13_MARK_UNIVERSITY_SOLUTIONS.md) |
 | **Numerical Solved Bank** | 100% verified step-by-step numerical problems with formulas and arithmetic | [NUMERICAL_SOLUTIONS.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/solved_problems/NUMERICAL_PROBLEMS_WORKED_SOLUTIONS.md) |
 | **Progress Tracker** | Real-time syllabus and topic completion tracker | [PROGRESS_TRACKER.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/PROGRESS_TRACKER.md) |
+| **1-Day Exam Cram Plan** | Night-before & morning-of high-yield schedule | [ONE_DAY_STUDY_PLAN.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/ONE_DAY_STUDY_PLAN.md) |
 | **2-Day Fast-Track Revision** | High-yield 48-hour exam revision plan | [TWO_DAY_STUDY_PLAN.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/TWO_DAY_STUDY_PLAN.md) |
 | **YouTube & Video Guide** | Curated video lecture tracks (NPTEL Rajib Mall, Gate Smashers, etc.) | [YOUTUBE_LEARNING_GUIDE.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/sources/youtube/YOUTUBE_LEARNING_GUIDE.md) |
 | **Textbook Catalog** | Prescribed literature & chapter concordance | [TEXTBOOK_CATALOG.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/sources/textbooks/TEXTBOOK_CATALOG.md) |
