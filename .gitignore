@@ -1,0 +1,28 @@
+# Software Engineering Learning Repository Git Ignore
+# Exclude large binaries, generated PDFs, and local scans
+*.pdf
+*.PDF
+*.docx
+*.jpeg
+*.jpg
+*.png
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment files and credentials
+.env
+.env.*
+secrets.json
+credentials.json
+*.key
+
+# Editor and OS specific files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

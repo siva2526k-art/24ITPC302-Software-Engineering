@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>24ITPC302 Software Engineering Master Solutions</title>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+
+@page {
+    size: A4;
+    margin: 16mm 14mm 16mm 14mm;
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8.5pt;
+        color: #64748b;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    line-height: 1.55;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.cover-container {
+    text-align: center;
+    border-bottom: 3px double #0284c7;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.college-name {
+    font-size: 15pt;
+    font-weight: 800;
+    color: #0369a1;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.college-sub {
+    font-size: 9pt;
+    font-weight: 600;
+    color: #475569;
+    margin: 2px 0 6px 0;
+}
+
+.doc-title {
+    font-size: 13.5pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 6px 0;
+    background-color: #f0f9ff;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1.5px solid #bae6fd;
+}
+
+.doc-subtitle {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #334155;
+    margin: 4px 0 10px 0;
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 8.5pt;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.meta-item strong {
+    color: #0369a1;
+}
+
+.module-header {
+    background: linear-gradient(90deg, #0369a1, #0284c7);
+    color: white;
+    font-size: 12pt;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-top: 26px;
+    margin-bottom: 14px;
+    page-break-after: avoid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-header.mod1 { background: linear-gradient(90deg, #0369a1, #38bdf8); }
+.module-header.mod2 { background: linear-gradient(90deg, #0f766e, #14b8a6); }
+.module-header.mod3 { background: linear-gradient(90deg, #4338ca, #6366f1); }
+.module-header.mod4 { background: linear-gradient(90deg, #b45309, #f59e0b); }
+.module-header.mod5 { background: linear-gradient(90deg, #be123c, #f43f5e); }
+.module-header.mod6 { background: linear-gradient(90deg, #475569, #64748b); }
+.module-header.cheatsheet { background: linear-gradient(90deg, #0f172a, #334155); }
+
+.section-label {
+    font-size: 8.5pt;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.card {
+    border: 1px solid #e2e8f0;
+    border-left: 4.5px solid #0284c7;
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    page-break-inside: avoid;
+}
+
+.card.combo {
+    border-left-color: #d97706;
+    background-color: #fffbeb;
+}
+
+.card.num {
+    border-left-color: #059669;
+    background-color: #f0fdf4;
+}
+
+.card.cheat {
+    border-left-color: #0284c7;
+    background-color: #f0f9ff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.q-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.badge {
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.badge-2m { background-color: #e0f2fe; color: #0369a1; }
+.badge-13m { background-color: #fee2e2; color: #b91c1c; }
+.badge-cheat { background-color: #dcfce7; color: #15803d; }
+.badge-num { background-color: #e0e7ff; color: #4338ca; }
+
+.q-text {
+    font-style: italic;
+    color: #334155;
+    background-color: #f8fafc;
+    border-left: 3px solid #94a3b8;
+    padding: 6px 10px;
+    margin: 6px 0 10px 0;
+    font-size: 9.5pt;
+}
+
+.step-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-size: 9.5pt;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 8.5pt;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #cbd5e1;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.answer-box {
+    background-color: #f0fdf4;
+    border: 1.5px solid #22c55e;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-weight: 700;
+    color: #15803d;
+    font-size: 9.5pt;
+}
+
+.code-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: Consolas, monospace;
+    font-size: 8.5pt;
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+</style>
+</head>
+<body>
+
+<div class="cover-container">
+    <div class="college-name">Sri Sai Ram Engineering College (Autonomous)</div>
+    <div class="college-sub">West Tambaram, Chennai – 600 044 | Affiliated to Anna University, Chennai</div>
+    <div class="college-sub">DEPARTMENT OF INFORMATION TECHNOLOGY & COMPUTER SCIENCE — REGULATIONS 2024</div>
+    
+    <div class="doc-title">24ITPC302: SOFTWARE ENGINEERING</div>
+    <div class="doc-subtitle">ALL-MODULES (1 TO 6) MASTER EXAMINATION COMPENDIUM & SOLUTIONS MANUAL</div>
+    
+    <div class="meta-grid">
+        <div class="meta-item"><strong>Course Code:</strong> 24ITPC302</div>
+        <div class="meta-item"><strong>Degree / Sem:</strong> B.Tech IT / B.E. CSE (Sem III)</div>
+        <div class="meta-item"><strong>Regulation:</strong> 2024 Autonomous</div>
+        <div class="meta-item"><strong>NPTEL Code:</strong> 106105182 (IIT KGP)</div>
+        <div class="meta-item"><strong>Credits:</strong> 3 (L:3, T:0, P:0)</div>
+        <div class="meta-item"><strong>Total Periods:</strong> 45 Periods</div>
+        <div class="meta-item"><strong>Scope:</strong> Modules I to VI</div>
+        <div class="meta-item"><strong>SDG Goals:</strong> SDG No. 4 & 9</div>
+    </div>
+</div>
+
+<!-- SECTION 1: MASTER CHEAT SHEET -->
+<div class="module-header cheatsheet">
+    <span>SECTION 1: THE ULTIMATE 6-MODULE FORMULA, METRICS & ARCHITECTURE CHEAT SHEET</span>
+    <span class="section-label">High-Yield Exam Summary</span>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">📐 MODULE I: SOFTWARE PROCESS & AGILE DEVELOPMENT CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE I SUMMARY</span>
+    </div>
+    <p><strong>1. Prescriptive Process Models:</strong>
+    <br>• <em>Waterfall Model:</em> Linear sequential; Communication \(\to\) Planning \(\to\) Modeling \(\to\) Construction \(\to\) Deployment. Inflexible; late working software. Best for compiler/payroll.
+    <br>• <em>V-Model:</em> Left wing = Verification (Specs/Design); Right wing = Validation (Testing). Early test planning. Best for avionics/medical.
+    <br>• <em>Spiral Model (Boehm):</em> Risk-driven evolutionary lifecycle in 4 quadrants: (I) Objective setting, (II) Risk analysis/prototyping, (III) Engineering development, (IV) Planning next phase.
+    <br>• <em>RAD Model:</em> Component-based 60–90 day rapid cycle using 4GL visual tools. Requires modular scope.
+    <br>• <em>Prototyping:</em> Throwaway (clarify requirements, discard) vs Evolutionary (iteratively evolves into production system).
+    </p>
+    <p><strong>2. Agile Manifesto & Extreme Programming (XP):</strong>
+    <br>• <em>4 Values:</em> Individuals & interactions, Working software, Customer collaboration, Responding to change.
+    <br>• <em>XP Core Practices:</em> Pair Programming (Driver writes code; Navigator reviews in real-time), Test-Driven Development (TDD: write unit tests first), Continuous Integration (CI), 2-week Sprints, On-site customer.
+    </p>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">📋 MODULE II: REQUIREMENTS ANALYSIS & SPECIFICATION CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE II SUMMARY</span>
+    </div>
+    <p><strong>1. Requirements Classification & IEEE 830 SRS:</strong>
+    <br>• <em>Functional:</em> Specific services/calculations (e.g. "Authenticate user with OTP").
+    <br>• <em>Non-Functional (FURPS+):</em> Quality constraints: Performance (\(< 2\)s), Security (256-bit AES), Availability (99.99%), Portability.
+    <br>• <em>IEEE 830 SRS Outline:</em> 1. Introduction (Purpose, Scope), 2. Overall Description (Perspective, Functions, Constraints), 3. Specific Requirements (Interface, Functional, Performance, System attributes).
+    <br>• <em>Good SRS Attributes:</em> Unambiguous, Complete, Consistent, Verifiable/Testable, Modifiable, Traceable (via RTM).
+    </p>
+    <p><strong>2. Structured Analysis & Modeling:</strong>
+    <br>• <em>DFD Levels:</em> Level 0 (Context diagram, no data stores) \(\to\) Level 1 (Decomposition into 4–7 sub-processes) \(\to\) Level 2.
+    <br>• <em>Balancing Rule:</em> Net data flows across parent boundary at Level \(N\) must equal aggregate flows at Level \(N+1\).
+    <br>• <em>Petri Nets:</em> Places (\(P\), circles), Transitions (\(T\), bars), Arcs (\(A\)), Tokens (\(\bullet\)). Transition fires when every input place has \(\ge 1\) token; consumes input token and deposits output token.
+    <br>• <em>Data Dictionary Notation:</em> Sequence (`+`), Selection (`[ | ]`), Iteration (`{ }`), Optional (`( )`).
+    </p>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">🏗️ MODULE III: SOFTWARE DESIGN & ARCHITECTURE CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE III SUMMARY</span>
+    </div>
+    <p><strong>1. Functional Independence: Cohesion vs Coupling:</strong>
+    <br>• <em>Golden Law:</em> Maximize Cohesion, Minimize Coupling!
+    <br>• <em>Cohesion Hierarchy (Worst \(\to\) Best):</em> Coincidental \(\to\) Logical \(\to\) Temporal \(\to\) Procedural \(\to\) Communicational \(\to\) Sequential \(\to\) <strong>Functional (Best)</strong>.
+    <br>• <em>Coupling Hierarchy (Worst \(\to\) Best):</em> Content (Worst) \(\to\) Common (Globals) \(\to\) Control (Flags) \(\to\) Stamp (Data structure) \(\to\) <strong>Data (Best)</strong> \(\to\) Uncoupled.
+    </p>
+    <p><strong>2. Architectural Styles & Design Heuristics:</strong>
+    <br>• <em>Styles:</em> Data-Centered (Repository/Blackboard), Data-Flow (Pipe-and-Filter), Call-and-Return (Layered), Event-Driven (Pub-Sub).
+    <br>• <em>Transform Mapping:</em> Maps DFD to Structure Chart: Afferent branch (input) \(\to\) Transform center (compute) \(\to\) Efferent branch (output).
+    <br>• <em>Fan-Out:</em> Number of directly invoked submodules (\(3 \le \text{Fan-Out} \le 7\)). <em>Fan-In:</em> Number of calling modules (Maximize for reuse).
+    <br>• <em>Theo Mandel's 3 UI Rules:</em> (1) Place user in control, (2) Reduce user memory load, (3) Make interface consistent.
+    </p>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">🧪 MODULE IV: TESTING & MAINTENANCE CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE IV FORMULAS</span>
+    </div>
+    <p><strong>1. White-Box Basis Path Testing:</strong>
+    <br>• <em>Cyclomatic Complexity Formulas:</em>
+    \[ \mathbf{V(G) = E - N + 2P = P' + 1 = R} \]
+    where \(E\) = edges, \(N\) = nodes, \(P = 1\) (connected components), \(P'\) = predicate nodes, \(R\) = enclosed regions \(+\) 1 outer region.
+    <br>• <em>Significance:</em> Defines maximum number of linearly independent paths needed for 100% statement and branch coverage.
+    </p>
+    <p><strong>2. Black-Box Testing & Levels:</strong>
+    <br>• <em>Boundary Value Analysis (BVA):</em> For range \([a, b]\), test: \(a, \ a+1, \ \text{Nominal}, \ b-1, \ b\).
+    <br>• <em>Integration Testing:</em> Top-Down (requires <strong>Stubs</strong>) vs Bottom-Up (requires <strong>Drivers</strong>) vs Sandwich.
+    <br>• <em>Maintenance Types:</em> Corrective (21%), Adaptive (25%), <strong>Perfective (50% - Largest)</strong>, Preventive (4%).
+    <br>• <em>Reengineering Model:</em> Inventory analysis \(\to\) Document restructuring \(\to\) <strong>Reverse engineering</strong> \(\to\) Code/Data restructuring \(\to\) <strong>Forward engineering</strong>.
+    </p>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">📊 MODULE V: PROJECT MANAGEMENT & ESTIMATION CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE V FORMULAS</span>
+    </div>
+    <p><strong>1. Albrecht's Function Point (FP) Model:</strong>
+    \[ \mathbf{FP = UFC \times \left(0.65 + 0.01 \sum_{i=1}^{14} F_i\right)} \]
+    • Components: External Inputs (\(EI\): 3, 4, 6), External Outputs (\(EO\): 4, 5, 7), External Inquiries (\(EQ\): 3, 4, 6), Internal Files (\(ILF\): 7, 10, 15), External Interfaces (\(EIF\): 5, 7, 10).
+    <br>• \(VAF = 0.65 + 0.01 \sum F_i \implies 0.65 \le VAF \le 1.35\).
+    </p>
+    <p><strong>2. Basic COCOMO I Model:</strong>
+    \[ \mathbf{E = a \cdot (KLOC)^b \quad \text{[Person-Months]}}, \qquad \mathbf{D = c \cdot (E)^d \quad \text{[Months]}}, \qquad \mathbf{P = \frac{E}{D} \quad \text{[Staff]}} \]
+    • <em>Organic:</em> \(a = 2.4, \ b = 1.05, \ c = 2.5, \ d = 0.38\).
+    <br>• <em>Semidetached:</em> \(a = 3.0, \ b = 1.12, \ c = 2.5, \ d = 0.35\).
+    <br>• <em>Embedded:</em> \(a = 3.6, \ b = 1.20, \ c = 2.5, \ d = 0.32\).
+    </p>
+    <p><strong>3. Earned Value Analysis (EVA):</strong>
+    \[ \mathbf{CV = EV - AC}, \qquad \mathbf{SV = EV - PV} \]
+    \[ \mathbf{CPI = \frac{EV}{AC}}, \qquad \mathbf{SPI = \frac{EV}{PV}}, \qquad \mathbf{EAC = \frac{BAC}{CPI}} \]
+    • \(CPI < 1.0 \implies\) Over Budget (Bad); \(SPI < 1.0 \implies\) Behind Schedule (Bad).
+    </p>
+</div>
+
+<div class="card cheat">
+    <div class="card-header">
+        <span class="q-title">🛡️ MODULE VI: RISK MANAGEMENT & CASE TOOLS CHEAT SHEET</span>
+        <span class="badge badge-cheat">MODULE VI SUMMARY</span>
+    </div>
+    <p><strong>1. Software Risk Management:</strong>
+    <br>• <em>Risk Exposure:</em> \(\mathbf{RE = P \times C}\) (Probability \(\times\) Impact Cost).
+    <br>• <em>Risk Reduction Leverage:</em> \(\mathbf{RRL = \frac{RE_{\text{before}} - RE_{\text{after}}}{\text{Cost of Action}}}\). (Justified if \(RRL > 1.0\)).
+    <br>• <em>RMMM Plan:</em> <strong>Mitigation</strong> (proactive avoidance before risk occurs) \(\to\) <strong>Monitoring</strong> (tracking early warning triggers) \(\to\) <strong>Management</strong> (contingency response after risk occurs).
+    </p>
+    <p><strong>2. CASE Tools Environment:</strong>
+    <br>• <em>Architecture:</em> User Interface Layer \(\to\) Tool Integration Services (Data, Control, Presentation) \(\to\) <strong>Object Management System (OMS / Central Repository)</strong>.
+    <br>• <em>Taxonomy:</em> Upper CASE (Analysis/Design/DFD/UML), Lower CASE (Compilers, Test automation, Code generators), Integrated CASE (End-to-end full SDLC traceability).
+    </p>
+</div>
+
+<!-- SECTION 2: WORKED NUMERICAL SOLUTIONS -->
+<div class="module-header mod4">
+    <span>SECTION 2: WORKED NUMERICAL EXAM PROBLEMS</span>
+    <span class="section-label">100% Step-by-Step Solutions</span>
+</div>
+
+<div class="card num">
+    <div class="card-header">
+        <span class="q-title">🎯 NUMERICAL 1: White-Box Basis Path Testing & Cyclomatic Complexity</span>
+        <span class="badge badge-13m">FULL 13 MARKS</span>
+    </div>
+    <div class="q-text">
+        Find Cyclomatic Complexity \(V(G)\) and derive independent basis paths for:
+        <br><code>int findMax(int a, int b, int c) { int max = a; if (b > max) max = b; if (c > max) max = c; return max; }</code>
+    </div>
+    <div class="step-title">Step 1: Graph Nodes & Edges</div>
+    <p>Nodes: \(N = 6\) (Node 1: entry, Node 2: check \(b>max\), Node 3: \(max=b\), Node 4: check \(c>max\), Node 5: \(max=c\), Node 6: return).
+    <br>Edges: \(E = 7\) (\(1\to 2, \ 2\to 3, \ 2\to 4, \ 3\to 4, \ 4\to 5, \ 4\to 6, \ 5\to 6\)).</p>
+    <div class="step-title">Step 2: Cyclomatic Complexity via 3 Independent Methods</div>
+    <p>1. <em>Edges & Nodes:</em> \(V(G) = E - N + 2P = 7 - 6 + 2(1) = \mathbf{3}\).
+    <br>2. <em>Predicate Nodes:</em> Nodes 2 and 4 are predicates \(\implies V(G) = P' + 1 = 2 + 1 = \mathbf{3}\).
+    <br>3. <em>Enclosed Regions:</em> 2 bounded inner regions \(+\) 1 unbounded outer region \(\implies V(G) = \mathbf{3}\).</p>
+    <div class="step-title">Step 3: Linearly Independent Basis Paths & Test Suite</div>
+    <p>• <strong>Path 1:</strong> \(1 \to 2 \to 4 \to 6 \implies \text{Input } (10, 5, 2) \implies \text{Expected: } 10\)
+    <br>• <strong>Path 2:</strong> \(1 \to 2 \to 3 \to 4 \to 6 \implies \text{Input } (5, 10, 2) \implies \text{Expected: } 10\)
+    <br>• <strong>Path 3:</strong> \(1 \to 2 \to 4 \to 5 \to 6 \implies \text{Input } (5, 2, 10) \implies \text{Expected: } 10\)</p>
+    <div class="answer-box">✓ Final Answer: V(G) = 3 | Exactly 3 Independent Basis Paths Guarantee 100% Path Coverage</div>
+</div>
+
+<div class="card num">
+    <div class="card-header">
+        <span class="q-title">🎯 NUMERICAL 2: Function Point (FP) Calculation & Language LOC Sizing</span>
+        <span class="badge badge-13m">FULL 13 MARKS</span>
+    </div>
+    <div class="q-text">
+        System has: EI: 20 simple (wt 3), 10 average (wt 4); EO: 15 average (wt 5), 5 complex (wt 7); EQ: 12 simple (wt 3), 8 average (wt 4); ILF: 4 average (wt 10), 2 complex (wt 15); EIF: 3 average (wt 7). All 14 complexity factors are rated 3. Compute UFC, VAF, FP, and Python LOC (25 LOC/FP).
+    </div>
+    <div class="step-title">Step 1: Unadjusted Function Count (UFC)</div>
+    <p>\[ UFC = (20\times 3 + 10\times 4) + (15\times 5 + 5\times 7) + (12\times 3 + 8\times 4) + (4\times 10 + 2\times 15) + (3\times 7) \]
+    \[ UFC = (60 + 40) + (75 + 35) + (36 + 32) + (40 + 30) + 21 = 100 + 110 + 68 + 70 + 21 = \mathbf{369} \]</p>
+    <div class="step-title">Step 2: Value Adjustment Factor (VAF) & Final FP</div>
+    <p>\[ \sum_{i=1}^{14} F_i = 14 \times 3 = 42 \implies VAF = 0.65 + 0.01(42) = \mathbf{1.07} \]
+    \[ FP = UFC \times VAF = 369 \times 1.07 = \mathbf{394.83 \text{ Function Points}} \]</p>
+    <div class="step-title">Step 3: Estimated Sizing in Python & Java</div>
+    <p>• Python (25 LOC/FP): \(394.83 \times 25 = \mathbf{9,871 \text{ LOC} \ (9.87 \text{ KLOC})}\).
+    <br>• Java (53 LOC/FP): \(394.83 \times 53 = \mathbf{20,926 \text{ LOC} \ (20.93 \text{ KLOC})}\).</p>
+    <div class="answer-box">✓ Final Answer: UFC = 369 | VAF = 1.07 | FP = 394.83 | Python Size = 9.87 KLOC | Java Size = 20.93 KLOC</div>
+</div>
+
+<div class="card num">
+    <div class="card-header">
+        <span class="q-title">🎯 NUMERICAL 3: Basic COCOMO I Estimation across All 3 Modes</span>
+        <span class="badge badge-13m">FULL 13 MARKS</span>
+    </div>
+    <div class="q-text">
+        For a software system sized at 40 KLOC, calculate Effort (Person-Months), Duration (Months), Staff Size, and Productivity across Organic, Semidetached, and Embedded modes.
+    </div>
+    <div class="step-title">Calculations & Results</div>
+    <table class="data-table">
+        <thead>
+            <tr><th>Mode</th><th>Effort Formula</th><th>Effort (E) [PM]</th><th>Time Formula</th><th>Duration (D) [Months]</th><th>Staff (P = E/D)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Organic</strong></td><td>\(2.4 \times (40)^{1.05}\)</td><td><strong>115.41 PM</strong></td><td>\(2.5 \times (115.41)^{0.38}\)</td><td><strong>15.24 Months</strong></td><td><strong>7.6 ≈ 8 Persons</strong></td></tr>
+            <tr><td><strong>Semidetached</strong></td><td>\(3.0 \times (40)^{1.12}\)</td><td><strong>184.92 PM</strong></td><td>\(2.5 \times (184.92)^{0.35}\)</td><td><strong>15.61 Months</strong></td><td><strong>11.9 ≈ 12 Persons</strong></td></tr>
+            <tr><td><strong>Embedded</strong></td><td>\(3.6 \times (40)^{1.20}\)</td><td><strong>297.07 PM</strong></td><td>\(2.5 \times (297.07)^{0.32}\)</td><td><strong>15.46 Months</strong></td><td><strong>19.2 ≈ 20 Persons</strong></td></tr>
+        </tbody>
+    </table>
+    <div class="answer-box">✓ Final Answer: Organic: 115.4 PM, 15.2 Mos | Semidetached: 184.9 PM, 15.6 Mos | Embedded: 297.1 PM, 15.5 Mos</div>
+</div>
+
+<div class="card num">
+    <div class="card-header">
+        <span class="q-title">🎯 NUMERICAL 4: Earned Value Analysis (EVA) Health Audit</span>
+        <span class="badge badge-13m">FULL 13 MARKS</span>
+    </div>
+    <div class="q-text">
+        BAC = $200,000, Planned Duration = 12 months. At Month 6: PV = $100,000, EV = $80,000, AC = $95,000. Calculate CV, SV, CPI, SPI, EAC, and ETC.
+    </div>
+    <div class="step-title">Step-by-Step Variance & Forecasting Calculations</div>
+    <p>• <strong>Cost Variance:</strong> \(CV = EV - AC = 80,000 - 95,000 = \mathbf{-\$15,000}\) (\(CV < 0 \implies\) <strong>Over Budget</strong>).
+    <br>• <strong>Schedule Variance:</strong> \(SV = EV - PV = 80,000 - 100,000 = \mathbf{-\$20,000}\) (\(SV < 0 \implies\) <strong>Behind Schedule</strong>).
+    <br>• <strong>Cost Performance Index:</strong> \(CPI = \frac{EV}{AC} = \frac{80,000}{95,000} = \mathbf{0.842}\) (Only $0.84 of work delivered per dollar spent).
+    <br>• <strong>Schedule Performance Index:</strong> \(SPI = \frac{EV}{PV} = \frac{80,000}{100,000} = \mathbf{0.800}\) (Running at 80% planned velocity).
+    <br>• <strong>Estimate at Completion:</strong> \(EAC = \frac{BAC}{CPI} = \frac{200,000}{0.8421} = \mathbf{\$237,500}\) (Projected cost overrun: $37,500).
+    <br>• <strong>Estimate to Complete:</strong> \(ETC = EAC - AC = 237,500 - 95,000 = \mathbf{\$142,500}\).</p>
+    <div class="answer-box">✓ Final Answer: CV = -$15k (Over Budget) | SV = -$20k (Behind Schedule) | CPI = 0.842 | SPI = 0.800 | EAC = $237,500</div>
+</div>
+
+</body>
+</html>
