@@ -30,6 +30,16 @@ This catalog documents the official prescribed textbooks, reference literature, 
   - Software testing & Quality management: Chapters 8, 9, 24
   - Project management & Planning: Chapters 22 & 23
 
+### 3. Gene Kim, Jez Humble, Patrick Debois, John Willis
+- **Title:** *The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations*
+- **Edition:** 2nd Edition / IT Revolution Press (Official Syllabus Textbook 3)
+- **File:** [6. The DevOps Handbook - Gene Kim, Jez Humble, Patrick Debois, John Willis [TEXTBOOK 3].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/6.%20The%20DevOps%20Handbook%20-%20Gene%20Kim,%20Jez%20Humble,%20Patrick%20Debois,%20John%20Willis%20[TEXTBOOK%203].pdf)
+- **Key Exam Coverage:**
+  - Continuous Delivery & Deployment Pipelines: Parts II & III
+  - Agile / Lean feedback loops & Automated Testing: Chapters 6, 7, 9
+  - Telemetry, Monitoring, and Operations: Part IV
+
+
 ---
 
 ## 📖 Reference Literature & Lecture Notes
@@ -61,3 +71,13 @@ This catalog documents the official prescribed textbooks, reference literature, 
   - High-yield unit-by-unit revision summaries
   - Structured DFDs, Decision Tables, Data Dictionaries
   - Testing Stubs, Drivers, and Maintenance Metrics
+
+### 6. Stephen R. Schach (Vanderbilt University)
+- **Title:** *Object-Oriented and Classical Software Engineering*
+- **Edition:** 8th Edition, McGraw-Hill (Official Syllabus Reference 4)
+- **File:** [7. Object-Oriented and Classical Software Engineering (8th Edition) - Stephen R. Schach [REFERENCE 4].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/7.%20Object-Oriented%20and%20Classical%20Software%20Engineering%20(8th%20Edition)%20-%20Stephen%20R.%20Schach%20[REFERENCE%204].pdf)
+- **Key Exam Coverage:**
+  - Classical vs Object-Oriented Life Cycle Models: Chapters 2 & 3
+  - Requirements & Specification: Chapters 10 & 11
+  - Object-Oriented Design & Post-Delivery Maintenance: Chapters 13 & 15
+

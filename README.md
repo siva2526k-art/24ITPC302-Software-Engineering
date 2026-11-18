@@ -52,13 +52,15 @@ This repository is a publication-grade, comprehensive learning and exam-preparat
 
 ## 📖 Prescribed Textbooks & Reference Materials (Downloaded & Offline)
 
-All official reference books and university lecture notes are downloaded and stored locally in [`textbooks/`](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/) and root:
+All official textbooks, reference books, and university lecture notes are downloaded and stored locally in [`textbooks/`](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/) and root:
 
-1. **[1. Software Engineering - A Practitioner's Approach (8th Edition) - Roger S. Pressman, Bruce R. Maxim [TEXTBOOK 1].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/1.%20Software%20Engineering%20-%20A%20Practitioner's%20Approach%20(8th%20Edition)%20-%20Roger%20S.%20Pressman,%20Bruce%20R.%20Maxim%20[TEXTBOOK%201].pdf)** (22.9 MB)
-2. **[2. Software Engineering (9th Edition) - Ian Sommerville [TEXTBOOK 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/2.%20Software%20Engineering%20(9th%20Edition)%20-%20Ian%20Sommerville%20[TEXTBOOK%202].pdf)** (5.0 MB)
-3. **[3. Fundamentals of Software Engineering (4th Edition) - Rajib Mall [REFERENCE 1 - NPTEL].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/3.%20Fundamentals%20of%20Software%20Engineering%20(4th%20Edition)%20-%20Rajib%20Mall%20[REFERENCE%201%20-%20NPTEL].pdf)** (9.1 MB — IIT Kharagpur NPTEL Course 106105182)
-4. **[4. Software Engineering (3rd Edition) - K.K. Aggarwal, Yogesh Singh [REFERENCE 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/4.%20Software%20Engineering%20(3rd%20Edition)%20-%20K.K.%20Aggarwal,%20Yogesh%20Singh%20[REFERENCE%202].pdf)** (6.7 MB)
-5. **[5. Comprehensive Software Engineering University Lecture Notes - VSSUT [REFERENCE 3].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/5.%20Comprehensive%20Software%20Engineering%20University%20Lecture%20Notes%20-%20VSSUT%20[REFERENCE%203].pdf)** (3.5 MB)
+1. **[1. Software Engineering - A Practitioner's Approach (8th Edition) - Roger S. Pressman, Bruce R. Maxim [TEXTBOOK 1].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/1.%20Software%20Engineering%20-%20A%20Practitioner's%20Approach%20(8th%20Edition)%20-%20Roger%20S.%20Pressman,%20Bruce%20R.%20Maxim%20[TEXTBOOK%201].pdf)** (24.0 MB)
+2. **[2. Software Engineering (9th Edition) - Ian Sommerville [TEXTBOOK 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/2.%20Software%20Engineering%20(9th%20Edition)%20-%20Ian%20Sommerville%20[TEXTBOOK%202].pdf)** (5.3 MB)
+3. **[6. The DevOps Handbook - Gene Kim, Jez Humble, Patrick Debois, John Willis [TEXTBOOK 3].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/6.%20The%20DevOps%20Handbook%20-%20Gene%20Kim,%20Jez%20Humble,%20Patrick%20Debois,%20John%20Willis%20[TEXTBOOK%203].pdf)** (10.3 MB)
+4. **[3. Fundamentals of Software Engineering (4th Edition) - Rajib Mall [REFERENCE 1 - NPTEL].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/3.%20Fundamentals%20of%20Software%20Engineering%20(4th%20Edition)%20-%20Rajib%20Mall%20[REFERENCE%201%20-%20NPTEL].pdf)** (9.5 MB — IIT Kharagpur NPTEL Course 106105182)
+5. **[4. Software Engineering (3rd Edition) - K.K. Aggarwal, Yogesh Singh [REFERENCE 2].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/4.%20Software%20Engineering%20(3rd%20Edition)%20-%20K.K.%20Aggarwal,%20Yogesh%20Singh%20[REFERENCE%202].pdf)** (7.0 MB)
+6. **[5. Comprehensive Software Engineering University Lecture Notes - VSSUT [REFERENCE 3].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/5.%20Comprehensive%20Software%20Engineering%20University%20Lecture%20Notes%20-%20VSSUT%20[REFERENCE%203].pdf)** (3.6 MB)
+7. **[7. Object-Oriented and Classical Software Engineering (8th Edition) - Stephen R. Schach [REFERENCE 4].pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/textbooks/7.%20Object-Oriented%20and%20Classical%20Software%20Engineering%20(8th%20Edition)%20-%20Stephen%20R.%20Schach%20[REFERENCE%204].pdf)** (3.3 MB)
 
 ---
 
