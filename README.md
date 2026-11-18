@@ -29,6 +29,7 @@ This repository is a publication-grade, comprehensive learning and exam-preparat
 | Directory / File | Description | Quick Link |
 | :--- | :--- | :--- |
 | **Unit-1 Master Study Hub** | **Exam-ready Notes, Diagrams & 13/16M Answers for XP, V-Model, Incremental** | [Unit-1/README.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/Unit-1/README.md) |
+| **Unit-1 Complete PDF** | **Compiled publication-grade PDF for Unit 1 (Waterfall, Spiral, Agile, XP, CAT-1)** | [UNIT_1_SOFTWARE_PROCESS_AND_AGILE.pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/UNIT_1_SOFTWARE_PROCESS_AND_AGILE.pdf) |
 | **Global Master Index** | Central cross-reference map across all modules, textbooks, and problem sets | [MASTER_INDEX.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/MASTER_INDEX.md) |
 | **Syllabus & Curriculum** | Line-by-line mapping of all 6 modules, textbooks, and NPTEL tracks | [24ITPC302_SYLLABUS.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/syllabus/24ITPC302_SYLLABUS.md) |
 | **Syllabus Mapping** | Exam weighting, Bloom's taxonomy, and priority breakdown | [MASTER_SYLLABUS_MAPPING.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/MASTER_SYLLABUS_MAPPING.md) |
