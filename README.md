@@ -44,6 +44,7 @@ This repository is a publication-grade, comprehensive learning and exam-preparat
 | **Master Solutions PDF** | 6-Module Compendium & Worked Solutions | [24ITPC302_MASTER_EXAM_SOLUTIONS.pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/24ITPC302_ALL_MODULES_MASTER_EXAM_SOLUTIONS.pdf) |
 | **CAT-I Model Exam PDF** | Units 1, 2, 3 Complete 50-Mark Solutions | [CAT_1_2026_SE_SOLUTIONS.pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/CAT_1_2026_SE_SOLUTIONS.pdf) |
 | **CAT-II Model Exam PDF**| Units 4, 5, 6 Complete 50-Mark Solutions | [CAT_2_2026_SE_SOLUTIONS.pdf](file:///C:/Users/siva2/OneDrive/Desktop/soft/CAT_2_2026_SE_SOLUTIONS.pdf) |
+| **Highest 16-Mark Solutions** | Full model answers for top 7 exam questions | [HIGHEST_PRIORITY_16_MARK_MASTER_SOLUTIONS.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/solved_problems/HIGHEST_PRIORITY_16_MARK_MASTER_SOLUTIONS.md) |
 | **Faculty Priority Solutions** | Model answers for prescribed questions | [MAM_EXAM_TOPICS_MASTER_SOLUTIONS.md](file:///C:/Users/siva2/OneDrive/Desktop/soft/solved_problems/MAM_EXAM_TOPICS_MASTER_SOLUTIONS.md) |
 | **Python Tools** | Automation scripts for metrics calculation and publication-grade PDF generation | [code/python/](file:///C:/Users/siva2/OneDrive/Desktop/soft/code/python/) |
 
