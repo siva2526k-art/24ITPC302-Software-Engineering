@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24ITPC302 Unit 2 Master Examination Compendium</title>
+    <style>
+@page {
+    size: A4;
+    margin: 14mm 12mm 14mm 12mm;
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8pt;
+        color: #64748b;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    line-height: 1.5;
+    font-size: 9.5pt;
+    margin: 0;
+    padding: 0;
+}
+
+.cover-header {
+    text-align: center;
+    border-bottom: 3px double #0284c7;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.college-title {
+    font-size: 14pt;
+    font-weight: 800;
+    color: #0369a1;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sub-header {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #475569;
+    margin: 3px 0;
+}
+
+.doc-badge {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-size: 11pt;
+    font-weight: 700;
+    padding: 4px 18px;
+    border-radius: 4px;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
+.unit-banner {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 5px solid #0284c7;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-radius: 0 6px 6px 0;
+}
+
+.unit-title {
+    font-size: 13pt;
+    font-weight: 800;
+    color: #0369a1;
+    margin: 0 0 4px 0;
+}
+
+.unit-desc {
+    font-size: 8.5pt;
+    color: #334155;
+    margin: 0;
+}
+
+h2.topic-header {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #ffffff;
+    background: #0284c7;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    page-break-after: avoid;
+}
+
+h3.section-header {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0369a1;
+    border-bottom: 1.5px solid #cbd5e1;
+    padding-bottom: 3px;
+    margin: 12px 0 6px 0;
+    page-break-after: avoid;
+}
+
+.meta-pill {
+    font-size: 8pt;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 14px 0;
+    font-size: 8.5pt;
+    page-break-inside: avoid;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.alert-box {
+    border-left: 4px solid #0284c7;
+    background-color: #f0f9ff;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 9pt;
+    border-radius: 0 4px 4px 0;
+    page-break-inside: avoid;
+}
+
+.alert-warn {
+    border-left-color: #d97706;
+    background-color: #fffbeb;
+}
+
+.alert-success {
+    border-left-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+.diagram-container {
+    text-align: center;
+    margin: 14px 0;
+    padding: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    page-break-inside: avoid;
+}
+
+.diagram-caption {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #475569;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.qa-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    page-break-inside: avoid;
+}
+
+.qa-question {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 9pt;
+    color: #0369a1;
+}
+
+.qa-answer {
+    padding: 8px 10px;
+    font-size: 8.5pt;
+    color: #1e293b;
+}
+
+.code-box {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 8pt;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 8px 0;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+}
+
+.page-break {
+    page-break-before: always;
+}
+</style>
+</head>
+<body>
+
+    <!-- Cover Header -->
+    <div class="cover-header">
+        <div class="college-title">Sri Sai Ram Engineering College (Autonomous)</div>
+        <div class="sub-header">Affiliated to Anna University | Regulations 2024 | Department of IT & CSE</div>
+        <div class="sub-header">24ITPC302 — SOFTWARE ENGINEERING | SEMESTER III</div>
+        <div class="doc-badge">UNIT 2: REQUIREMENTS ANALYSIS & SPECIFICATION — EXAM COMPENDIUM</div>
+    </div>
+
+    <div class="unit-banner">
+        <div class="unit-title">Module Overview & Core Examination Focus</div>
+        <div class="unit-desc">
+            Unit 2 covers the complete engineering requirements lifecycle: IEEE 830-1998 Software Requirements Specification (SRS), the 7-phase Requirements Engineering Process (Feasibility, Elicitation, Validation, CCB), concurrent state modeling with Petri Nets, and Functional vs. Non-Functional Requirements (FURPS+).
+        </div>
+    </div>
+
+    <!-- TOPIC 1: IEEE 830 SRS DOCUMENT -->
+    <h2 class="topic-header">
+        <span>1. Software Requirements Specification (SRS) — IEEE 830 Standard</span>
+        <span class="meta-pill">Sure 13M / 16M</span>
+    </h2>
+
+    <h3 class="section-header">1.1 Definition & Contractual Role</h3>
+    <p>
+        The <strong>Software Requirements Specification (SRS)</strong> is the official, authoritative document that completely describes the external behavior, functional capabilities, performance standards, interface constraints, and quality attributes of a proposed software system. It serves as the legal and technical baseline contract between the customer and the software development team, establishing the sole benchmark for architecture, construction, and acceptance testing.
+    </p>
+
+    <h3 class="section-header">1.2 Standard IEEE 830-1998 Hierarchical Structure</h3>
+    <div class="code-box">1. INTRODUCTION
+   1.1 Purpose of the Document
+   1.2 Scope of the Software System
+   1.3 Definitions, Acronyms, and Abbreviations
+   1.4 References
+   1.5 Overview of the Document
+
+2. OVERALL DESCRIPTION
+   2.1 Product Perspective (System context, hardware/software interfaces)
+   2.2 Product Functions (High-level summary of major business capabilities)
+   2.3 User Characteristics (User profiles, skill levels, education)
+   2.4 General Constraints (Hardware limits, regulatory standards, memory limits)
+   2.5 Assumptions and Dependencies (Third-party platforms, operating systems)
+
+3. SPECIFIC REQUIREMENTS (Detailed Technical Core)
+   3.1 External Interface Requirements (User UI, Hardware, Software, Communications)
+   3.2 Detailed Functional Requirements (Input - Process - Output specifications)
+   3.3 Performance Requirements (Response latency, throughput, concurrency)
+   3.4 Design & Technical Constraints (Programming languages, database standards)
+   3.5 Software System Quality Attributes (Reliability, Availability, Security, Maintainability)</div>
+
+    <h3 class="section-header">1.3 Detailed Component Breakdown of Section 3 (Specific Requirements)</h3>
+    <p>
+        <strong>1. External Interface Requirements:</strong> Details user interfaces (UI screen layouts, accessibility), hardware interfaces (sensors, microcontrollers, memory limits), software interfaces (OS platforms, databases like PostgreSQL 15), and communications protocols (HTTPS, TLS 1.3, JSON-REST over WebSockets).<br>
+        <strong>2. Detailed Functional Requirements (Input-Process-Output):</strong> Specifies every system operation precisely: (a) <em>Input:</em> Accepted fields and formats, (b) <em>Process:</em> Business calculations and validation logic, (c) <em>Output:</em> Screen updates, database commits, and error messages.<br>
+        <strong>3. Performance Requirements:</strong> Quantifiable limits under load: Response latency (&lt; 200 ms for 95% of queries) and throughput (minimum 3,000 TPS).<br>
+        <strong>4. Design & Technical Constraints:</strong> Mandates architecture (Microservices), languages (Java 21 LTS), and regulatory compliance (GDPR, HIPAA).<br>
+        <strong>5. Software Quality Attributes:</strong> Quantifies Reliability (MTBF &ge; 3,000 hrs), Availability (99.99%), and Security (AES-256 encryption at rest).
+    </p>
+
+    <h3 class="section-header">1.4 The 6 Essential Quality Characteristics of an Ideal SRS</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20%;">Characteristic</th>
+                <th style="width: 80%;">Engineering Definition & Quality Standard</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1. Unambiguous</strong></td>
+                <td>Every requirement has only <strong>one possible interpretation</strong>. Subjective words (<em>"fast", "user-friendly"</em>) are strictly prohibited and replaced with numeric metrics.</td>
+            </tr>
+            <tr>
+                <td><strong>2. Complete</strong></td>
+                <td>Specifies <strong>all significant requirements</strong>: all valid/invalid inputs, full error handling, performance bounds, and fault responses.</td>
+            </tr>
+            <tr>
+                <td><strong>3. Consistent</strong></td>
+                <td>Zero internal contradictions. Terminology, values, and constraints do not clash across different sections of the document.</td>
+            </tr>
+            <tr>
+                <td><strong>4. Verifiable</strong></td>
+                <td>Every requirement is testable. An independent QA tester can design a cost-effective test with an objective <strong>PASS or FAIL</strong> outcome.</td>
+            </tr>
+            <tr>
+                <td><strong>5. Modifiable</strong></td>
+                <td>Non-redundant, well-indexed structure allowing changes to be propagated cleanly without ripple effects.</td>
+            </tr>
+            <tr>
+                <td><strong>6. Traceable</strong></td>
+                <td>Unique hierarchical identifiers (e.g., <code>REQ-AUTH-01</code>) allow bidirectional tracing from business need &rarr; SRS &rarr; design &rarr; code &rarr; test cases.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TOPIC 2: REQUIREMENTS ENGINEERING PROCESS -->
+    <div class="page-break"></div>
+    <h2 class="topic-header">
+        <span>2. The Requirements Engineering (RE) Process</span>
+        <span class="meta-pill">Sure 13M / 16M</span>
+    </h2>
+
+    <h3 class="section-header">2.1 Process Definition & End-to-End Workflow</h3>
+    <p>
+        The <strong>Requirements Engineering (RE) Process</strong> is a disciplined, systematic, and iterative sequence of engineering activities concerned with discovering, analyzing, documenting, validating, and managing the services and constraints of a proposed software system.
+    </p>
+
+    <div class="diagram-container">
+        <!-- SVG Diagram: RE Process Workflow -->
+        <svg width="100%" height="200" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phase 1: Feasibility -->
+            <rect x="10" y="20" width="100" height="50" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="60" y="42" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">1. Feasibility Study</text>
+            <text x="60" y="56" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Tech/Econ/Ops/Legal</text>
+
+            <path d="M 110 45 L 128 45" stroke="#0284c7" stroke-width="2"/>
+
+            <!-- Phase 2: Elicitation -->
+            <rect x="130" y="20" width="100" height="50" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="180" y="42" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">2. Elicitation</text>
+            <text x="180" y="56" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Interviews, JAD, Surveys</text>
+
+            <path d="M 230 45 L 248 45" stroke="#0284c7" stroke-width="2"/>
+
+            <!-- Phase 3: Analysis & Elaboration -->
+            <rect x="250" y="20" width="115" height="50" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="307" y="42" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">3. Analysis & Model</text>
+            <text x="307" y="56" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">DFD Level 0/1 & FR/NFR</text>
+
+            <path d="M 365 45 L 383 45" stroke="#0284c7" stroke-width="2"/>
+
+            <!-- Phase 4: Negotiation -->
+            <rect x="385" y="20" width="105" height="50" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="437" y="42" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">4. Negotiation</text>
+            <text x="437" y="56" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Prioritization & Trade-offs</text>
+
+            <path d="M 490 45 L 508 45" stroke="#0284c7" stroke-width="2"/>
+
+            <!-- Phase 5: Specification -->
+            <rect x="510" y="20" width="100" height="50" rx="5" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+            <text x="560" y="42" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">5. Specification</text>
+            <text x="560" y="56" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Draft IEEE 830 SRS</text>
+
+            <!-- Down to Phase 6 -->
+            <path d="M 560 70 L 560 100 L 530 100" stroke="#0284c7" stroke-width="2"/>
+
+            <!-- Phase 6: Validation -->
+            <rect x="380" y="80" width="150" height="55" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+            <text x="455" y="102" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#78350f" text-anchor="middle">6. Validation Gate</text>
+            <text x="455" y="116" font-family="sans-serif" font-size="7" fill="#78350f" text-anchor="middle">Reviews, Inspections & Prototypes</text>
+
+            <!-- Feedback loop if flawed -->
+            <path d="M 455 135 L 455 155 L 180 155 L 180 70" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,4"/>
+            <text x="315" y="165" font-family="sans-serif" font-size="7" fill="#dc2626" text-anchor="middle">Defects Uncovered: Feedback Loop to Elicitation</text>
+
+            <!-- To Phase 7 -->
+            <path d="M 380 107 L 290 107" stroke="#16a34a" stroke-width="2"/>
+
+            <!-- Phase 7: Management -->
+            <rect x="90" y="80" width="200" height="55" rx="5" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+            <text x="190" y="102" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#15803d" text-anchor="middle">7. Requirements Management</text>
+            <text x="190" y="116" font-family="sans-serif" font-size="7" fill="#15803d" text-anchor="middle">Change Control Board (CCB) & RTM Traceability</text>
+        </svg>
+        <div class="diagram-caption">Figure 2.1: The 7-Phase End-to-End Requirements Engineering Process Flowchart</div>
+    </div>
+
+    <h3 class="section-header">2.2 Detailed Explanation of the 7 Lifecycle Phases</h3>
+    <p>
+        <strong>1. Feasibility Study:</strong> Assesses Technical feasibility (skills, tools), Economic feasibility (Cost-Benefit Analysis, ROI), Operational feasibility (user adoption), and Legal/Schedule feasibility before committing funds.<br>
+        <strong>2. Requirements Elicitation:</strong> Discovers user needs using <em>Interviews</em>, <em>Joint Application Development (JAD)</em> workshops, <em>Questionnaires</em>, <em>On-site Observation (Ethnography)</em>, and <em>Use Cases</em>.<br>
+        <strong>3. Requirements Analysis & Elaboration:</strong> Classifies requirements into Functional and Non-Functional, resolves stakeholder conflicts, and models boundaries using Data Flow Diagrams (DFDs) Level 0 & 1.<br>
+        <strong>4. Requirements Negotiation:</strong> Resolves scope vs budget conflicts using prioritization frameworks (e.g., MoSCoW: Must-have, Should-have, Could-have, Won't-have).<br>
+        <strong>5. Requirements Specification:</strong> Transcribes agreed requirements into formal documentation adhering to the IEEE 830 SRS standard.<br>
+        <strong>6. Requirements Validation:</strong> Formal inspection reviews, UI prototyping, and consistency checking against the 6 quality attributes.<br>
+        <strong>7. Requirements Management:</strong> Baselines the approved SRS (Version 1.0) and governs scope alterations through a formal <strong>Change Control Board (CCB)</strong> and a bidirectional <strong>Requirements Traceability Matrix (RTM)</strong>.
+    </p>
+
+    <!-- TOPIC 3: PETRI NETS -->
+    <div class="page-break"></div>
+    <h2 class="topic-header">
+        <span>3. Petri Nets (Concurrency & Synchronization Modeling)</span>
+        <span class="meta-pill">High Yield 13M</span>
+    </h2>
+
+    <h3 class="section-header">3.1 Mathematical Definition & Graphical Primitives</h3>
+    <p>
+        A <strong>Petri Net</strong> (Carl Adam Petri, 1962) is a formal mathematical and graphical modeling language specifically designed for modeling concurrent, asynchronous, parallel, and distributed systems. Formally defined as an ordered 5-tuple:
+    </p>
+    <div class="alert-box alert-success">
+        <strong>PN = (P, T, F, W, M<sub>0</sub>)</strong><br>
+        • <strong>P = {p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>m</sub>}:</strong> Finite set of <strong>Places</strong> (circles ○ representing conditions or resource pools).<br>
+        • <strong>T = {t<sub>1</sub>, t<sub>2</sub>, ..., t<sub>n</sub>}:</strong> Finite set of <strong>Transitions</strong> (bars/boxes ▮ representing events or actions), P &cap; T = &empty;.<br>
+        • <strong>F &sube; (P &times; T) &cup; (T &times; P):</strong> Set of <strong>Directed Arcs</strong> (arrows &rarr; connecting Places to Transitions and Transitions to Places; never Place-to-Place or Transition-to-Transition).<br>
+        • <strong>W: F &rarr; {1, 2, ...}:</strong> <strong>Arc Weight Function</strong> (defaults to 1).<br>
+        • <strong>M<sub>0</sub>: P &rarr; {0, 1, 2, ...}:</strong> <strong>Initial Marking Vector</strong> representing token (&bull;) distribution across places.
+    </div>
+
+    <h3 class="section-header">3.2 Transition Enabling and Firing Rules</h3>
+    <p>
+        • <strong>Enabling Rule:</strong> A transition <em>t</em> is enabled if each input place contains at least as many tokens as the connecting arc weight: &forall; p &isin; I(t), M(p) &ge; W(p, t).<br>
+        • <strong>Firing Rule:</strong> When <em>t</em> fires, it atomically consumes W(p, t) tokens from each input place and deposits W(t, p') tokens into each output place: M'(p) = M(p) - W(p, t) + W(t, p').
+    </p>
+
+    <h3 class="section-header">3.3 Producer-Consumer Model with Bounded Buffer (K = 2)</h3>
+    <div class="diagram-container">
+        <!-- SVG Diagram: Petri Net Producer-Consumer -->
+        <svg width="100%" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+            <!-- P1: Producer Ready -->
+            <circle cx="80" cy="60" r="28" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+            <text x="80" y="55" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">P1</text>
+            <text x="80" y="68" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Prod Ready</text>
+            <circle cx="80" cy="40" r="4" fill="#0f172a"/>
+
+            <!-- T1: Produce -->
+            <rect x="180" y="85" width="20" height="50" rx="3" fill="#1e293b"/>
+            <text x="190" y="75" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1e293b" text-anchor="middle">T1 (Produce)</text>
+
+            <!-- Buffer Places -->
+            <!-- P2: Buffer Slots Free -->
+            <circle cx="300" cy="40" r="28" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+            <text x="300" y="35" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#78350f" text-anchor="middle">P2 (Slots)</text>
+            <text x="300" y="48" font-family="sans-serif" font-size="7" fill="#78350f" text-anchor="middle">Tokens: 2</text>
+            <circle cx="293" cy="22" r="3.5" fill="#0f172a"/>
+            <circle cx="307" cy="22" r="3.5" fill="#0f172a"/>
+
+            <!-- P3: Buffer Items Ready -->
+            <circle cx="300" cy="160" r="28" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+            <text x="300" y="155" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#78350f" text-anchor="middle">P3 (Items)</text>
+            <text x="300" y="168" font-family="sans-serif" font-size="7" fill="#78350f" text-anchor="middle">Empty (0)</text>
+
+            <!-- T2: Consume -->
+            <rect x="420" y="85" width="20" height="50" rx="3" fill="#1e293b"/>
+            <text x="430" y="75" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1e293b" text-anchor="middle">T2 (Consume)</text>
+
+            <!-- P4: Consumer Ready -->
+            <circle cx="520" cy="60" r="28" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+            <text x="520" y="55" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#0369a1" text-anchor="middle">P4</text>
+            <text x="520" y="68" font-family="sans-serif" font-size="7" fill="#475569" text-anchor="middle">Cons Ready</text>
+            <circle cx="520" cy="40" r="4" fill="#0f172a"/>
+
+            <!-- Connecting Arcs -->
+            <!-- T1 Input Arcs -->
+            <path d="M 106 72 L 180 100" stroke="#0284c7" stroke-width="1.5"/>
+            <path d="M 275 52 L 200 95" stroke="#d97706" stroke-width="1.5"/>
+            <!-- T1 Output Arcs -->
+            <path d="M 180 120 C 130 140, 70 110, 70 88" stroke="#0284c7" stroke-width="1.5" fill="none"/>
+            <path d="M 200 125 L 275 150" stroke="#d97706" stroke-width="1.5"/>
+
+            <!-- T2 Input Arcs -->
+            <path d="M 325 150 L 420 125" stroke="#d97706" stroke-width="1.5"/>
+            <path d="M 495 72 L 440 100" stroke="#0284c7" stroke-width="1.5"/>
+            <!-- T2 Output Arcs -->
+            <path d="M 440 120 C 490 140, 530 110, 530 88" stroke="#0284c7" stroke-width="1.5" fill="none"/>
+            <path d="M 420 95 L 325 52" stroke="#d97706" stroke-width="1.5"/>
+        </svg>
+        <div class="diagram-caption">Figure 2.2: Bounded Buffer Producer-Consumer Petri Net Model (Capacity K = 2)</div>
+    </div>
+
+    <h3 class="section-header">3.4 Step-by-Step Marking Table (State Transition Trace)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 8%;">Step</th>
+                <th style="width: 26%;">Marking Vector [P1, P2, P3, P4]</th>
+                <th style="width: 16%;">Fired Transition</th>
+                <th style="width: 50%;">Physical System State & Boundary Proof</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>0</strong></td>
+                <td><strong>M<sub>0</sub> = [1, 2, 0, 1]</strong></td>
+                <td>Initial State</td>
+                <td>2 slots free, 0 items. T1 enabled; <strong>T2 disabled (prevents underflow)</strong>.</td>
+            </tr>
+            <tr>
+                <td><strong>1</strong></td>
+                <td><strong>M<sub>1</sub> = [1, 1, 1, 1]</strong></td>
+                <td>T1 (Produce)</td>
+                <td>1 item deposited. 1 slot free, 1 item ready. Both T1 and T2 enabled!</td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td><strong>M<sub>2</sub> = [1, 0, 2, 1]</strong></td>
+                <td>T1 (Produce)</td>
+                <td>2nd item deposited. Buffer is <strong>FULL</strong>. <strong>T1 disabled (prevents overflow)</strong>.</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td><strong>M<sub>3</sub> = [1, 1, 1, 1]</strong></td>
+                <td>T2 (Consume)</td>
+                <td>Consumer consumed 1 item. 1 slot freed. T1 re-enabled.</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td><strong>M<sub>4</sub> = [1, 2, 0, 1]</strong></td>
+                <td>T2 (Consume)</td>
+                <td>Consumer consumed last item. Buffer is <strong>EMPTY</strong>. Reversible to M0.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TOPIC 4: FUNCTIONAL VS NON-FUNCTIONAL -->
+    <div class="page-break"></div>
+    <h2 class="topic-header">
+        <span>4. Functional vs. Non-Functional Requirements (FURPS+)</span>
+        <span class="meta-pill">Sure 13M</span>
+    </h2>
+
+    <h3 class="section-header">4.1 10-Parameter Comparative Matrix</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 22%;">Dimension</th>
+                <th style="width: 39%;">Functional Requirements (FR)</th>
+                <th style="width: 39%;">Non-Functional Requirements (NFR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1. Core Question</strong></td>
+                <td><strong>"What does the system do?"</strong></td>
+                <td><strong>"How well does the system perform?"</strong></td>
+            </tr>
+            <tr>
+                <td><strong>2. Definition</strong></td>
+                <td>Statements of services, business calculations, and data processing.</td>
+                <td>Constraints on performance, security, reliability, and ergonomics.</td>
+            </tr>
+            <tr>
+                <td><strong>3. Impact Scope</strong></td>
+                <td><strong>Localized:</strong> Often confined to a single module or class.</td>
+                <td><strong>Cross-Cutting:</strong> Pervades the entire architecture and database.</td>
+            </tr>
+            <tr>
+                <td><strong>4. Origin</strong></td>
+                <td>Derived from business operations and user workflows.</td>
+                <td>Derived from technical, legal, and user experience standards.</td>
+            </tr>
+            <tr>
+                <td><strong>5. Verification</strong></td>
+                <td>Binary (<strong>Pass / Fail</strong>): Calculation works or fails.</td>
+                <td>Continuous / Quantitative: Measured against numeric thresholds.</td>
+            </tr>
+            <tr>
+                <td><strong>6. Architecture Impact</strong></td>
+                <td>Influences low-level component logic and algorithms.</td>
+                <td>Dictates high-level architectural styles (microservices, caching).</td>
+            </tr>
+            <tr>
+                <td><strong>7. Specification Format</strong></td>
+                <td>Use Cases, User Stories, and IPO tables.</td>
+                <td>Quantifiable engineering metrics and constraints.</td>
+            </tr>
+            <tr>
+                <td><strong>8. Testing Technique</strong></td>
+                <td>Functional testing, unit testing, acceptance testing.</td>
+                <td>Stress testing, load profiling, penetration testing, usability labs.</td>
+            </tr>
+            <tr>
+                <td><strong>9. Failure Impact</strong></td>
+                <td>Isolated feature broken; remaining system operates.</td>
+                <td>Total collapse: crash under load, data breach, user abandonment.</td>
+            </tr>
+            <tr>
+                <td><strong>10. Concrete Example</strong></td>
+                <td><em>"Calculate 8% sales tax on cart items."</em></td>
+                <td><em>"Process 3,500 transactions/sec at &lt; 200 ms latency."</em></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-header">4.2 The FURPS+ Framework & Quantifiable Metrics</h3>
+    <p>
+        • <strong>Functionality (F):</strong> Feature capabilities, calculations, and security authorization.<br>
+        • <strong>Usability (U):</strong> Ergonomics, consistency, and training time (e.g., clerk learns system in &lt; 30 mins).<br>
+        • <strong>Reliability (R):</strong> Mean Time Between Failures (MTBF &ge; 2,500 hours) and crash recovery.<br>
+        • <strong>Performance (P):</strong> Response latency (&lt; 500 ms) and throughput (&gt; 3,000 TPS).<br>
+        • <strong>Supportability (S):</strong> Modularity, maintainability, and portability across operating environments.<br>
+        • <strong>The "+" Constraints:</strong> Design, Implementation, Interface, and Physical constraints.
+    </p>
+
+    <div class="alert-box alert-success">
+        <strong>Mathematical Availability Calculation Formula:</strong><br>
+        Availability (A) = [ MTBF / (MTBF + MTTR) ] &times; 100%<br>
+        <em>Sample Problem:</em> A cloud server has MTBF = 998 hours and MTTR = 2 hours.<br>
+        A = [ 998 / (998 + 2) ] &times; 100% = [ 998 / 1000 ] &times; 100% = <strong>99.8%</strong>
+    </div>
+
+    <!-- TOPIC 5: CAT-1 QUESTION BANK SOLUTIONS -->
+    <div class="page-break"></div>
+    <h2 class="topic-header">
+        <span>5. Official College CAT-1 Question Bank Solutions (Unit 2)</span>
+        <span class="meta-pill">Part-A 2-Marks High Yield</span>
+    </h2>
+
+    <div class="qa-card">
+        <div class="qa-question">Q1. What are the essential characteristics of a good SRS? [2M | K1 | CO2]</div>
+        <div class="qa-answer">(1) <strong>Unambiguous:</strong> Only one interpretation. (2) <strong>Complete:</strong> Covers all inputs and error states. (3) <strong>Consistent:</strong> No contradictory requirements. (4) <strong>Verifiable:</strong> Cost-effective test procedure exists. (5) <strong>Modifiable:</strong> Cleanly structured. (6) <strong>Traceable:</strong> Unique IDs for RTM linking.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-question">Q2. Define a Petri Net formally and state the firing rule. [2M | K1 | CO2]</div>
+        <div class="qa-answer">A Petri Net is a 5-tuple: PN = (P, T, F, W, M0) where P is Places, T is Transitions, F is Arcs, W is Weights, and M0 is Initial Marking. <strong>Firing Rule:</strong> Transition t is enabled iff &forall; p &isin; I(t), M(p) &ge; W(p, t). When fired, it consumes tokens from input places and deposits tokens into output places.</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-question">Q3. What is a Data Dictionary? State its notation symbols. [2M | K1 | CO2]</div>
+        <div class="qa-answer">A centralized metadata repository defining the structured composition of data flows and data stores appearing in DFDs. <strong>Notation:</strong> <code>=</code> (is composed of), <code>+</code> (sequence/and), <code>[ | ]</code> (selection/or), <code>{ }</code> (iteration/repetition), <code>( )</code> (optional component).</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-question">Q4. Differentiate between Functional and Non-Functional Requirements. [2M | K2 | CO2]</div>
+        <div class="qa-answer"><strong>Functional Requirements</strong> describe the specific behavioral services and calculations the system must perform (<em>"What the system does"</em>). <strong>Non-Functional Requirements</strong> specify operational constraints such as performance, security, availability, and usability (<em>"How well the system does it"</em>).</div>
+    </div>
+
+    <div class="qa-card">
+        <div class="qa-question">Q5. What is the Requirements Traceability Matrix (RTM)? [2M | K1 | CO2]</div>
+        <div class="qa-answer">A grid linking business goals to detailed SRS requirements, design modules, code files, and test cases. <strong>Forward Traceability</strong> guarantees complete implementation without omissions; <strong>Backward Traceability</strong> prevents unauthorized gold-plating.</div>
+    </div>
+
+</body>
+</html>
